@@ -1,0 +1,53 @@
+.nav-link {
+    padding: 0.5rem;
+    &:hover {
+        text-decoration: none;
+        color: rgba($primary-dark, 0.7);
+    }
+}
+@include media-md {
+    .nav-link {
+        padding: 0.5rem 1rem;
+    }
+}
+.navbar {
+    background-color: $primary-light;
+    color: $primary-dark;
+    height: auto;
+    z-index: 100;
+
+    .container {
+        margin: 0 !important;
+        max-width: 100% !important;
+    }
+
+    .navbar-brand{
+        display: block;
+        margin: auto;
+
+        img {
+            height: 100px;
+        }
+
+    }
+    .menu {
+        margin: auto;
+    }
+
+    li {
+        display: inline;
+    }
+}
+
+@include media-md {
+    .navbar {
+        height: 76px;
+        .navbar-brand {
+            display: inline-block;
+            margin: 0 1rem 0 0; 
+        }
+        .menu {
+            margin: 0;
+        }
+    }
+}

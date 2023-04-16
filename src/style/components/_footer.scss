@@ -1,0 +1,24 @@
+/*
+footer {
+    i:hover {
+            border-radius: 20px;
+            background: rgba(146, 249, 243, 0.5);
+            width: 30px;
+            height: 30px;
+            transition: all .3s ease;
+    }
+
+}
+*/
+
+footer {
+    font-family: $header-font;
+    .copywrite {
+        font-size: 1rem;
+        margin: 0.5rem 0;
+    }
+    img {
+        height: 2rem;
+        margin: 0 0.5rem;
+    }
+}

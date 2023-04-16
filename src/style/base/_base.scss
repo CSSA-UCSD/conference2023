@@ -1,0 +1,118 @@
+// font imports
+@font-face {
+    font-family: 'Manrope';
+    src: url("../../assets/fonts/Manrope/Manrope-VariableFont_wght.ttf") format('opentype');
+}
+@font-face {
+    font-family: 'Sometype Mono';
+    src: url("../../assets/fonts/Sometype-Mono-master/fonts/ttf/SometypeMono-Medium.ttf") format('opentype');
+}
+@import url(https://fonts.googleapis.com/css2?family=Be+Vietnam:ital,wght@0,400;0,500;1,400;1,500&display=swap);
+// fonts
+$header-font: 'Manrope', sans-serif;
+$body-font: 'Sometype Mono', sans-serif;
+
+// colors
+$primary-light: #001437;
+$night-ocean: #2d10a4;
+$digital-blue: #0484fb;
+$primary-dark: #65e6ff;
+$accent-1: #f7da28;
+
+$gradient-c-1: #EF0195;
+$gradient-c-2: #876AEC;
+$gradient-c-3: #2BC6DE;
+$gradient-c-4: #33E9C6;
+$gradient-c-5: #89FDCC;
+$gradient-w-1: #DDFD8C;
+$gradient-w-2: #E6F93C;
+$gradient-w-3: #F8D632;
+$gradient-w-4: #FBCA49;
+$gradient-w-5: #F48D54;
+
+// old accents
+$accent-2: #FE2047;
+$accent-3: #FEC60F;
+$accent-4: #FF007B;
+
+// body colors
+body {
+    background: $primary-light;
+    color: $primary-dark;
+}
+
+// type scale
+h1, h2, h3, h4, h5, h6 {
+    font-family: $header-font;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 60px;
+    line-height: 72px;
+}
+
+h2 {
+    font-size: 34px;
+    line-height: 44px;
+}
+
+p, a {
+    font-family: $body-font;
+}
+
+a {
+    &:hover {
+        color: inherit;
+    }
+}
+
+button {
+    background: none;
+    border: none;
+    color: inherit;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: none;
+
+    &:focus {
+        outline:0 !important;
+    }
+}
+
+input[type="button"] {
+    border: none !important;
+    outline: none !important;
+}
+
+.gradient-button {
+    border-radius: 1rem;
+    padding: 0.25rem 1.5rem;
+    font-size: 1rem;
+    color: $primary-light;
+    border: solid 3px transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(135deg, $accent-1, $gradient-w-5, $gradient-c-2, $digital-blue, $gradient-c-5);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px $primary-light inset;
+    transition: 0.3s;
+
+    &:hover {
+        box-shadow: none;
+
+        a {
+            color: $primary-light !important;
+        }
+    }
+}
+
+:export {
+    primaryLight: $primary-light;
+    primaryDark: $primary-dark;
+
+    accent1: $accent-1;
+    accent2: $accent-2;
+    accent3: $accent-3;
+  }
+  

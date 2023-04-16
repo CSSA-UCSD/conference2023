@@ -1,0 +1,267 @@
+h1 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@include media-md {
+h1 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+}
+
+img {
+    border-radius: 0.5rem;
+}
+
+
+.header-gradient {
+    background: -webkit-linear-gradient(135deg, $primary-dark, $accent-1, $gradient-w-5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Styling for Schedule Section */
+.schedule {
+    .day-schedule-content {
+        position: relative;
+        border: 0.25rem solid transparent;
+        border-radius: 16px;
+        background: $primary-light;
+        background-clip: padding-box;
+        padding: 1rem;
+
+        &::after {
+            position: absolute;
+            top: -0.25rem; bottom: -0.25rem;
+            left: -0.25rem; right: -0.25rem;
+            background: linear-gradient(135deg, $gradient-c-1, $gradient-c-2, $gradient-c-3, $gradient-c-4, $gradient-c-5);
+            content: '';
+            z-index: -1;
+            border-radius: 16px;
+        }
+
+        p {
+            margin-bottom: 0 !important;
+        }
+    }
+
+    .day-info {
+        span {
+            color: rgba($gradient-c-1, 0.7);
+        }
+        h4 {
+            font-size: 0.9rem;
+            color: $gradient-c-1;
+        }
+
+    }
+
+    .day-img {
+        img{
+            width: inherit;
+        }
+}
+}
+
+/* Styling for Speakers Section */
+.speakers {
+    &-carousel {
+        /* Setup Flexbox */
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+
+        /* Reverse Column Order */
+        -webkit-flex-flow: column-reverse;
+        flex-flow: column-reverse;
+    }
+    .carousel-arrows {
+        p {
+            font-size: 3rem;
+        }
+        &:hover {
+            color: rgba($primary-dark, 0.7);
+        }
+    }
+}
+
+/*
+.speaker-img {
+    img {
+        width: 100%;
+    }
+}
+*/
+
+.home {
+    &-section {
+        padding-bottom: 1rem;
+        width: inherit;
+
+        .words {
+            text-align: center;
+            font-size: 1.2rem;
+        }
+    }
+
+    &-buttons {
+        padding-top: 10vh;
+    }
+
+    &-title {
+        h2 {
+            font-size: 3rem;
+            line-height: 3.5rem;
+            font-weight: lighter;
+        }
+
+        @keyframes color-change {
+            0% { background: -webkit-linear-gradient(135deg, $gradient-w-5, $gradient-c-1, $gradient-c-4, $gradient-w-5, $gradient-c-1, $gradient-c-4);  
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;}
+            16% { background: -webkit-linear-gradient(135deg, $gradient-c-1, $gradient-c-4, $gradient-w-5, $gradient-c-1, $gradient-c-4, $gradient-w-5);  
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;}
+            32% { background: -webkit-linear-gradient(135deg, $gradient-c-4, $gradient-w-5, $gradient-c-1, $gradient-c-4, $gradient-w-5, $gradient-c-1);  
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;}
+            48% { background: -webkit-linear-gradient(135deg, $gradient-w-5, $gradient-c-1, $gradient-c-4, $gradient-w-5, $gradient-c-1, $gradient-c-4);  
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;}
+            64% { background: -webkit-linear-gradient(135deg, $gradient-c-1, $gradient-c-4, $gradient-w-5, $gradient-c-1, $gradient-c-4, $gradient-w-5);  
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;}
+            80% { background: -webkit-linear-gradient(135deg, $gradient-c-4, $gradient-w-5, $gradient-c-1, $gradient-c-4, $gradient-w-5, $gradient-c-1);  
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;}
+                /*
+            10% { background: -webkit-linear-gradient(135deg, $gradient-c-3, $gradient-c-4, $gradient-c-5, $gradient-w-1, $gradient-w-2, $gradient-w-3, $gradient-w-4, $gradient-w-5, $gradient-c-1, $gradient-c-2);  
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;}
+            20% { background: -webkit-linear-gradient(135deg, $gradient-c-4, $gradient-c-5, $gradient-w-1, $gradient-w-2, $gradient-w-3, $gradient-w-4, $gradient-w-5, $gradient-c-1, $gradient-c-2, $gradient-c-3);  
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;}
+            30% { background: -webkit-linear-gradient(135deg, $gradient-c-5, $gradient-w-1, $gradient-w-2, $gradient-w-3, $gradient-w-4, $gradient-w-5, $gradient-c-1, $gradient-c-2, $gradient-c-3, $gradient-c-4);  
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;}
+            40% { background: -webkit-linear-gradient(135deg, $gradient-w-1, $gradient-w-2, $gradient-w-3, $gradient-w-4, $gradient-w-5, $gradient-c-1, $gradient-c-2, $gradient-c-3, $gradient-c-4, $gradient-c-5);  
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;}
+            50% { background: -webkit-linear-gradient(135deg, $gradient-w-2, $gradient-w-3, $gradient-w-4, $gradient-w-5, $gradient-c-1, $gradient-c-2, $gradient-c-3, $gradient-c-4, $gradient-c-5, $gradient-w-1);  
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;}
+            60% { background: -webkit-linear-gradient(135deg, $gradient-w-3, $gradient-w-4, $gradient-w-5, $gradient-c-1, $gradient-c-2, $gradient-c-3, $gradient-c-4, $gradient-c-5, $gradient-w-1, $gradient-w-2);  
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;}
+            70% { background: -webkit-linear-gradient(135deg, $gradient-w-4, $gradient-w-5, $gradient-c-1, $gradient-c-2, $gradient-c-3, $gradient-c-4, $gradient-c-5, $gradient-w-1, $gradient-w-2, $gradient-w-3);  
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;}
+            80% { background: -webkit-linear-gradient(135deg, $gradient-w-5, $gradient-c-1, $gradient-c-2, $gradient-c-3, $gradient-c-4, $gradient-c-5, $gradient-w-1, $gradient-w-2, $gradient-w-3, $gradient-w-4);  
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;}
+            90% { background: -webkit-linear-gradient(135deg, $gradient-c-1, $gradient-c-2, $gradient-c-3, $gradient-c-4, $gradient-c-5, $gradient-w-1, $gradient-w-2, $gradient-w-3, $gradient-w-4, $gradient-w-5);  
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;}
+                */
+        }
+
+        .home-header-gradient {
+            //background: -webkit-linear-gradient(135deg, $accent-1, $gradient-c-1, $gradient-w-5);
+                //animation: color-change 3s infinite;
+                animation-timing-function: ease-out;
+                // background: -webkit-linear-gradient(135deg, $gradient-w-5, $gradient-c-1, $gradient-c-4, $gradient-w-5, $gradient-c-1, $gradient-c-4);  
+                background: -webkit-linear-gradient(135deg, $accent-1, $gradient-w-5, $gradient-c-2, $digital-blue, $gradient-c-5, $accent-1);  
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                transition: all ease;
+        }
+    }
+    &-img {
+        img {
+            width: inherit;
+        }
+        svg {
+            display: none;
+            margin: auto;
+            @include media-md {
+                display: block;
+            }
+        }
+    }
+}
+
+/* Home Page Animation */
+.animation{
+    overflow: hidden;
+    svg {
+        transform: translateY(-20%);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+
+        .st9{fill:#133B51;}
+        .st25{font-family:'Wavehaus-95SemiBold';}
+        .st26{font-size:60px;}
+    }
+    .path {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        animation: dash 5s linear alternate infinite;
+      }
+      
+      @keyframes dash {
+        from {
+          stroke-dashoffset: 1000;
+        }
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
+}
+
+@include media-md {
+    .animation {
+        svg {
+            transform: translateY(-10vh);
+        }
+    }
+}
+@include media-lg {
+    .animation {
+        svg {
+            transform: translateY(0vh);
+        }
+    }
+}
+
+
+@include media-md {
+    .home-initial {
+        padding: 55vh 10% 0 15%;
+        .home-title {
+            h1.title {
+                font-size: 52px;
+                line-height: 64px;
+            }
+        }
+    }
+    .home-buttons {
+        padding: 3rem 0;
+        padding-top: 0;
+    }
+}
+
+@include media-lg {
+    .home-initial {
+        .home-title {
+            h1.title {
+                font-size: 48px;
+                line-height: 56px;
+            }
+        }
+    }
+}

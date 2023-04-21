@@ -12,7 +12,7 @@ import SpeakerData from "../data/SpeakerData";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
-import IconSVG from '../../assets/conference icon 2022.svg';
+import IconSVG from '../../assets/logo2023SVG.svg';
 
 class Home extends React.Component {
 

@@ -8,6 +8,10 @@ Note: The `master` branch is the code from last year's conference. You can consi
 ### Checking for Code Updates
 * Check for any remote updates or local changes made by running `git status` in whichever branch you'd like to know. This tells you which files have been changed or whether your current branch is behind the remote repository, which should have the most updated version of the actual website. If you'd like to check for updates on the actual live website, make sure you're in the `main` branch to run this command. You'll also be able to see if there are any updates in each branch on GitHub.
 * **Make sure to `git pull` for any updates in the `main` branch when working on the code!** 
+
+### Adding Features
+If you're working on an issue, please create a branch name following `<issue #>-<description>-<of>-<issue>` for consistency. For example, a branch called `2-sched-text` may suggest that this branch solves issue 2 by adding schedule texts.
+
 ### Saving Code Changes
 1. Once you've made changes you'd like to save, add the file changed by running `git add file_name` or if you'd like to add all files changed at once, run `git add .`.
 2. After adding the filed, run `git commit -m message` where `message` is a short description of the changes made. This simulates a snapshot of the current status of the code. You could also do both at once by running `git commit -am message`.

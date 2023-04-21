@@ -1,9 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import Logo from "../../img/logos/Wordmark_Dark.svg";
-import Logo from "../../assets/Logo with glow.png";
-import LogoNoGlow from "../../assets/Logo without glow.png";
-import LogoSVG from "../../assets/conference logo 2022.svg";
+
+import Logo from "../../assets/logo2023.png";
+import LogoSVG from "../../assets/logo2023SVG.svg";
 
 class Navbar extends React.Component {
     render() {
@@ -36,7 +35,7 @@ class Navbar extends React.Component {
                                 </li>
                                 <li className='nav-item'>
                                     <h6>
-                                        <a href='https://ucsd.zoom.us/j/99955400276' target="_blank" className='nav-link'>Zoom</a>
+                                        <a href='https://ucsd.zoom.us/j/99955400276' target="_blank" rel="noreferrer" className='nav-link'>Zoom</a>
                                     </h6>
                                 </li>
                             </ul>

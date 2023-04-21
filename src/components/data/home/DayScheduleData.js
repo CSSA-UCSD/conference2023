@@ -53,7 +53,7 @@ const DayScheduleData = [
         name: "Day 3",
         date: "5/3/2023",
         time: "5:00-7:10 PM PDT",
-        location: "Red Shoe Room",
+        location: "Red Shoe Room @ PC West",
         events: [
             {
                 title: "Workshop TBA: Dr. Lauren Patrick",

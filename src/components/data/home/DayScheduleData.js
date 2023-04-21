@@ -9,11 +9,13 @@ const DayScheduleData = [
         events: [
             {
                 title: "Welcome Introduction",
-                time: "5-5:05pm"
+                time: "5-5:05pm",
+                recording: ""
             },
             {
                 title: "Keynote Speaker: Dr. David Danks",
-                time: "5:05-5:50pm"
+                time: "5:05-5:50pm",
+                recording: ""
             },
             {
                 title: "Social Activity/Break",
@@ -21,7 +23,8 @@ const DayScheduleData = [
             },
             {
                 title: "Workshop TBA: Dr. Lina Abarbanell",
-                time: "6:20-7:10pm" 
+                time: "6:20-7:10pm",
+                recording: ""
             }
         ],
         url: "",
@@ -35,7 +38,8 @@ const DayScheduleData = [
         events: [
             {
                 title: "Keynote Speaker: Dr. Meghan Yiu",
-                time: "5-5:50pm"
+                time: "5-5:50pm",
+                recording: ""
             },
             {
                 title: "Social Activity/Break",
@@ -43,7 +47,8 @@ const DayScheduleData = [
             },
             {
                 title: "Workshop TBA: Sam Hande",
-                time: "6:20-7:10pm"
+                time: "6:20-7:10pm",
+                recording: ""
             }
         ],
         url: "",
@@ -57,7 +62,8 @@ const DayScheduleData = [
         events: [
             {
                 title: "Workshop TBA: Dr. Lauren Patrick",
-                time: "5-5:50pm"
+                time: "5-5:50pm",
+                recording: ""
             }, 
             {
                 title: "Social Activity/Break",
@@ -65,11 +71,13 @@ const DayScheduleData = [
             },
             {
                 title: "Workshop TBA: Dr. Yang Xu",
-                time: "6:20-7:10pm"
+                time: "6:20-7:10pm",
+                recording: ""
             }, 
             {
                 title: "TBA",
-                time: "6:20-7:10pm"
+                time: "6:20-7:10pm",
+                recording: ""
             },
         ],
         url: "",

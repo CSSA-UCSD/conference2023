@@ -35,7 +35,7 @@ class Navbar extends React.Component {
                                 </li>
                                 <li className='nav-item'>
                                     <h6>
-                                        <a href='https://ucsd.zoom.us/j/99955400276' target="_blank" className='nav-link'>Zoom</a>
+                                        <a href='https://ucsd.zoom.us/j/99955400276' target="_blank" rel="noreferrer" className='nav-link'>Zoom</a>
                                     </h6>
                                 </li>
                             </ul>

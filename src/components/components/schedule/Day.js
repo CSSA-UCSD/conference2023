@@ -20,6 +20,12 @@ function Day() {
         });
     })
 
+    /** 
+     * Gets the weekday from the given date and word length option
+     * @param {string | number | Date} date - date to get the weekday of 
+     * @param {string} length - long, short, or narrow form of weekday in words (e.g. Monday vs. Mon)
+     * @returns weekday in English words
+     */
     const getWeekday = (date, length) => {
         return new Intl.DateTimeFormat("en-US", { weekday: length }).format(new Date(date));
     }

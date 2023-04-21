@@ -9,7 +9,7 @@ const EventData = [
     },
     {
         id: 2,
-        name: "Keynote Speaker: Nate Bolt",
+        name: "Keynote Speaker: XXXX",
         category: "",
         day: 1,
         date: "TUES 4/26/2022 | 5:05-5:50 PM PDT",

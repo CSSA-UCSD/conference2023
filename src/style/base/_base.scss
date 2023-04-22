@@ -13,7 +13,7 @@
 }
 
 // fonts
-$header-font1: 'Futura-Bold', sans-serif;
+$header-font: 'Futura-Bold', sans-serif;
 $header-font2: 'Futura-Med-Ital', sans-serif;
 $small-header: 'Futura-Medium', sans-serif;
 $body-font: 'Helvetica', sans-serif;
@@ -58,23 +58,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 110px;
     line-height: 72px;
 }
 
 h2 {
-    font-size: 34px;
+    font-size: 110px;
     line-height: 44px;
 }
 
-p, a {
+
+p {
     font-family: $body-font;
 }
 
 a {
+    font-family: $header-font;
+
     &:hover {
         color: inherit;
     }
+}
+
+.ital {
+    font-family: $header-font2;
+    font-size: 103px;
 }
 
 button {

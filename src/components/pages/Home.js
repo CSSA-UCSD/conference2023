@@ -63,10 +63,12 @@ class Home extends React.Component {
                         <img src={IconSVG} alt="conference icon" />
                     </div>
                     <div className="home-title col-sm-6 ">
-                        <h2>Evolutions in <span className="home-header-gradient">technology,</span> <span className="home-header-gradient">healthcare</span>, and current <span className="home-header-gradient">global issues</span> within the cognitive science chrysalis.</h2>
+                        <h1>Beyond <span className="ital"> The Mind</span></h1>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam </p>
+                        <h3><span className="ital"> Cognitive Capacities </span></h3>
                     </div>
                 </div>
-                <h2 className="header-gradient">About</h2>
+                <h2><span className="ital">01</span> About</h2>
                 <p>Cognitive Science Student Association at UCSD invites you to join our 15th annual National Cognitive Science Conference! Our annual conference is a 3-day event that highlights how current global events impact the way in which we interact with the world around us. Join us for a packed schedule of engaging presentations, interactive workshops, and invaluable networking!</p>
                 <p>This year's theme of “The Cognitive Metamorphosis” will focus on the emerging adaptations of cognitive science in technology, healthcare, and current global issues.</p>
                 <p>The conference will be held hybrid through both Zoom and in-person events and split into three days from 04/26/2022 to 04/28/2022.</p>
@@ -74,8 +76,16 @@ class Home extends React.Component {
                 <div className="home-intro-video py-5">
                     {/* <iframe title="conference-2022" width="100%" height="500" src="https://www.youtube.com/embed/Gx60wEdPc7w" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe> */}
                 </div>
+                <div className="speakers">
+                    <div className="container py-5">
+                        <div className="speakers-title header-gradient pt-5">
+                            <h2><span className="ital">02</span> Speakers</h2>
+                            <p className="px-5">Soon to be released!</p>
+                        </div>
+                    </div>
+                </div>
                 <div className="schedule">
-                    <h3><Link to='/schedule' className='nav-link'><span className="header-gradient">Schedule</span></Link></h3>
+                    <h2><Link to='/schedule' className='nav-link'><span className="ital">03</span> Schedule</Link></h2>
                     {ScheduleComponent}
                 </div>
                 {/* <div className="speakers pb-5">
@@ -94,15 +104,6 @@ class Home extends React.Component {
                         </Carousel>
                     </div>
                 </div> */}
-                <div className="speakers">
-                    <div className="container py-5">
-                        <div className="speakers-title header-gradient pt-5">
-                            <h3 className="">Speakers</h3>
-                            <p className="px-5">Soon to be released!</p>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         );
     }

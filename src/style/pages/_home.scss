@@ -105,7 +105,7 @@ img {
 
         .words {
             text-align: center;
-            font-size: 1.2rem;
+            font-size: 1.5rem;
         }
     }
 
@@ -114,10 +114,19 @@ img {
     }
 
     &-title {
+        h1 {
+            font-size: 6.9rem;
+            line-height: 4rem;
+        }
+
         h2 {
-            font-size: 3rem;
-            line-height: 3.5rem;
-            font-weight: lighter;
+            font-size: 6.4rem;
+            line-height: 4rem;
+        }
+
+        h3 {
+            font-size: 5.2rem;
+            line-height: 4rem;
         }
 
         /*

@@ -15,11 +15,13 @@ img {
 }
 
 
+/*
 .header-gradient {
     background: -webkit-linear-gradient(135deg, $primary-dark, $accent-1, $gradient-w-5);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+*/
 
 /* Styling for Schedule Section */
 .schedule {
@@ -52,7 +54,7 @@ img {
         }
         h4 {
             font-size: 0.9rem;
-            color: $gradient-c-1;
+            color: $primary-dark;
         }
 
     }
@@ -118,6 +120,7 @@ img {
             font-weight: lighter;
         }
 
+        /*
         @keyframes color-change {
             0% { background: -webkit-linear-gradient(135deg, $gradient-w-5, $gradient-c-1, $gradient-c-4, $gradient-w-5, $gradient-c-1, $gradient-c-4);  
                 -webkit-background-clip: text;
@@ -165,9 +168,11 @@ img {
             90% { background: -webkit-linear-gradient(135deg, $gradient-c-1, $gradient-c-2, $gradient-c-3, $gradient-c-4, $gradient-c-5, $gradient-w-1, $gradient-w-2, $gradient-w-3, $gradient-w-4, $gradient-w-5);  
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;}
-                */
+            
         }
+        */
 
+        /*
         .home-header-gradient {
             //background: -webkit-linear-gradient(135deg, $accent-1, $gradient-c-1, $gradient-w-5);
                 //animation: color-change 3s infinite;
@@ -178,6 +183,7 @@ img {
                 -webkit-text-fill-color: transparent;
                 transition: all ease;
         }
+        */
     }
     &-img {
         img {

@@ -43,14 +43,13 @@
                 font-weight: 500;
                 font-family: $body-font;
 
-                background: -webkit-linear-gradient(135deg, $accent-1, $primary-dark);
-                // background: -webkit-linear-gradient(135deg, $gradient-c-5, $gradient-c-3, $gradient-c-2);
+                //background: -webkit-linear-gradient(135deg, $accent-1, $primary-dark);
+                background: $primary-dark;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
             p {
-                // color: $gradient-c-5;
-                color: $accent-1;
+                color: $primary-dark;
             }
         }
     }
@@ -72,11 +71,11 @@
                 font-size: 0.75rem;
                 padding: 1rem 0 0;
                 margin: 0;
-                color: $accent-1;
+                color: $primary-dark;
             }
             &-link {
                 text-decoration: underline;
-                color: $accent-1;
+                color: $primary-dark;
                 &:hover {
                     color: $digital-blue;
                 }

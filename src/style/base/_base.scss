@@ -16,8 +16,13 @@ $body-font: 'Sometype Mono', sans-serif;
 $primary-light: #001437;
 $night-ocean: #2d10a4;
 $digital-blue: #0484fb;
-$primary-dark: #65e6ff;
-$accent-1: #f7da28;
+
+// 2023 colors
+$primary-dark: #ffffff;
+$accent-1: #D7009B; 
+$accent-2: #FF7BDA; 
+$accent-3: #39FFB8;
+$accent-4: #01DFED;
 
 $gradient-c-1: #EF0195;
 $gradient-c-2: #876AEC;
@@ -31,9 +36,10 @@ $gradient-w-4: #FBCA49;
 $gradient-w-5: #F48D54;
 
 // old accents
-$accent-2: #FE2047;
-$accent-3: #FEC60F;
-$accent-4: #FF007B;
+//$accent-1: #f7da28;
+//$accent-2: #FE2047;
+//$accent-3: #FEC60F;
+//$accent-4: #FF007B;
 
 // body colors
 body {

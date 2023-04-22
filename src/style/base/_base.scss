@@ -1,21 +1,22 @@
 // font imports
 @font-face {
-    font-family: 'Manrope';
-    src: url("../../assets/fonts/Manrope/Manrope-VariableFont_wght.ttf") format('opentype');
+    font-family: Futura-Bold;
+    src: url("../../assets/fonts/futura/Futura Bold font.ttf") format('truetype'); 
 }
 @font-face {
-    font-family: 'Sometype Mono';
-    src: url("../../assets/fonts/Sometype-Mono-master/fonts/ttf/SometypeMono-Medium.ttf") format('opentype');
+    font-family: Futura-Medium;
+    src: url("../../assets/fonts/futura/futura medium bt.ttf") format('truetype'); 
 }
-@import url(https://fonts.googleapis.com/css2?family=Be+Vietnam:ital,wght@0,400;0,500;1,400;1,500&display=swap);
-// fonts
-$header-font: 'Manrope', sans-serif;
-$body-font: 'Sometype Mono', sans-serif;
+@font-face {
+    font-family: Futura-Med-Ital;
+    src: url("../../assets/fonts/futura/Futura Medium Italic font.ttf") format('truetype'); 
+}
 
-// colors
-$primary-light: #001437;
-$night-ocean: #2d10a4;
-$digital-blue: #0484fb;
+// fonts
+$header-font1: 'Futura-Bold', sans-serif;
+$header-font2: 'Futura-Med-Ital', sans-serif;
+$small-header: 'Futura-Medium', sans-serif;
+$body-font: 'Helvetica', sans-serif;
 
 // 2023 colors
 $primary-dark: #ffffff;
@@ -24,6 +25,10 @@ $accent-2: #FF7BDA;
 $accent-3: #39FFB8;
 $accent-4: #01DFED;
 
+// old colors
+$primary-light: #001437;
+$night-ocean: #2d10a4;
+$digital-blue: #0484fb;
 $gradient-c-1: #EF0195;
 $gradient-c-2: #876AEC;
 $gradient-c-3: #2BC6DE;
@@ -34,7 +39,6 @@ $gradient-w-2: #E6F93C;
 $gradient-w-3: #F8D632;
 $gradient-w-4: #FBCA49;
 $gradient-w-5: #F48D54;
-
 // old accents
 //$accent-1: #f7da28;
 //$accent-2: #FE2047;

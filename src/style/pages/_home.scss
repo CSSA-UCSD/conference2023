@@ -61,7 +61,6 @@ img {
         .loc {
             color: $accent-3;
         }
-
     }
 
     .day-img {
@@ -118,22 +117,27 @@ img {
         padding-top: 10vh;
     }
 
+    // main header with conference title
     &-title {
         h1 {
+            font-family: $header-font;
+            //letter-spacing: 0.3rem;
             font-size: 6.9rem;
-            line-height: 4rem;
+            line-height: 4.7rem;
         }
-
-        h2 {
+        .ital {
+            font-family: $header-font2;
             font-size: 6.4rem;
-            line-height: 4rem;
+            line-height: 4.7rem;
         }
-
-        h3 {
+        #subhead {
             font-size: 5.2rem;
+        }
+        h3 {
+            font-family: $header-font;
+            font-size: 3.9rem;
             line-height: 4rem;
         }
-
         /*
         @keyframes color-change {
             0% { background: -webkit-linear-gradient(135deg, $gradient-w-5, $gradient-c-1, $gradient-c-4, $gradient-w-5, $gradient-c-1, $gradient-c-4);  

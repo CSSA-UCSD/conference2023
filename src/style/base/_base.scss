@@ -1,7 +1,7 @@
 // font imports
 @font-face {
-    font-family: Futura-Bold;
-    src: url("../../assets/fonts/futura/Futura Bold font.ttf") format('truetype'); 
+    font-family: Futura-Heavy;
+    src: url("../../assets/fonts/futura/Futura Heavy font.ttf") format('truetype'); 
 }
 @font-face {
     font-family: Futura-Medium;
@@ -13,7 +13,7 @@
 }
 
 // fonts
-$header-font: 'Futura-Bold', sans-serif;
+$header-font: 'Futura-Heavy', sans-serif;
 $header-font2: 'Futura-Med-Ital', sans-serif;
 $small-header: 'Futura-Medium', sans-serif;
 $body-font: 'Helvetica', sans-serif;

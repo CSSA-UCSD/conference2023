@@ -63,12 +63,14 @@ class Home extends React.Component {
                         <img src={IconSVG} alt="conference icon" />
                     </div>
                     <div className="home-title col-sm-6 ">
-                        <h1>Beyond <span className="ital"> The Mind</span></h1>
-                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam </p>
-                        <h3><span className="ital"> Cognitive Capacities </span></h3>
+                        <h1>Beyond</h1> 
+                        <h1><span className="ital">The Mind</span></h1> 
+                        <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam </i></p>
+                        <h1><span className="ital" id="subhead"> Cognitive Capacities </span></h1>
                     </div>
                 </div>
-                <h2><span className="ital">01</span> About</h2>
+                
+                <h3><span className="ital">01</span> About</h3>
                 <p>Cognitive Science Student Association at UCSD invites you to join our 15th annual National Cognitive Science Conference! Our annual conference is a 3-day event that highlights how current global events impact the way in which we interact with the world around us. Join us for a packed schedule of engaging presentations, interactive workshops, and invaluable networking!</p>
                 <p>This year's theme of “The Cognitive Metamorphosis” will focus on the emerging adaptations of cognitive science in technology, healthcare, and current global issues.</p>
                 <p>The conference will be held hybrid through both Zoom and in-person events and split into three days from 04/26/2022 to 04/28/2022.</p>
@@ -79,13 +81,13 @@ class Home extends React.Component {
                 <div className="speakers">
                     <div className="container py-5">
                         <div className="speakers-title header-gradient pt-5">
-                            <h2><span className="ital">02</span> Speakers</h2>
+                            <h3><span className="ital">02</span> Speakers</h3>
                             <p className="px-5">Soon to be released!</p>
                         </div>
                     </div>
                 </div>
                 <div className="schedule">
-                    <h2><Link to='/schedule' className='nav-link'><span className="ital">03</span> Schedule</Link></h2>
+                    <h3><Link to='/schedule' className='nav-link'><span className="ital">03</span> Schedule</Link></h3>
                     {ScheduleComponent}
                 </div>
                 {/* <div className="speakers pb-5">

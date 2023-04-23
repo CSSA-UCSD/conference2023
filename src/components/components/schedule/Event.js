@@ -16,27 +16,9 @@ class Event extends React.Component {
             <div className="day-schedule pb-5" data-aos="fade-up">
                 <div className="day-img">
                 </div>
-                {/*
-                {this.props.item.day === 1 ? 
-                    <div className="day-info">
-                        <h4>{this.props.item.date}</h4>
-                        <h2>{this.props.item.name}</h2>
-                        <p>{this.props.item.description}</p>
-                    </div>
-                : null }
-                {this.props.item.day === 2 ? 
-                    <div className="day-info">
-                        <div><h1>Day 2</h1></div>
-                        <h4>{this.props.item.date}</h4>
-                        <h2>{this.props.item.name}</h2>
-                        <p>{this.props.item.description}</p>
-                    </div>
-                : null }
-                */}
                 <div className="day-info">
-                    <h4>{this.props.item.date}</h4>
-                    <span>{this.props.item.location}</span>
-                    <h2>{this.props.item.name}</h2>
+                    <h4>{this.props.item.time}</h4>
+                    <h2>{this.props.item.title}</h2>
                     <p style={{'color':'#0484fb'}}>{this.props.item.description}</p>
                     <div>
                         {this.props.item.url ?

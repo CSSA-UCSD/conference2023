@@ -19,9 +19,9 @@ class DaySchedule extends React.Component {
                         <div className="day-info">
                             <h4>{weekday}</h4>
                             <h2>{this.props.item.name} - {this.props.item.date}</h2>
-                            <h4>{this.props.item.location}</h4>
+                            <h4><span className="loc">{this.props.item.location}</span></h4>
                             { this.props.item.events && this.props.item.events.map((event, key) => {
-                                return <p key={key}><span>{event.time}</span> {event.title}</p>
+                                return <p key={key}><span className="time">{event.time}</span> {event.title}</p>
                             })}
                         </div>
                     </div>

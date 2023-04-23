@@ -56,7 +56,7 @@ function Day() {
                                 <h1>Day {day.id}</h1>
                             </div>
                             <h4>{getWeekday(day.date, "short")} {day.date} | {day.time}</h4>
-                            <span>📍{day.location}</span>
+                            <span>{day.location}</span>
                             {/* {Day1Component} */}
                             {day.events.map((item, key) => {
                                 return < Event key={key} item={item} />

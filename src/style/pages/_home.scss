@@ -14,7 +14,6 @@ img {
     border-radius: 0.5rem;
 }
 
-
 /*
 .header-gradient {
     background: -webkit-linear-gradient(135deg, $primary-dark, $accent-1, $gradient-w-5);
@@ -26,6 +25,7 @@ img {
 /* Styling for Schedule Section */
 .schedule {
     .day-schedule-content {
+        /*
         position: relative;
         border: 0.25rem solid transparent;
         border-radius: 16px;
@@ -37,11 +37,12 @@ img {
             position: absolute;
             top: -0.25rem; bottom: -0.25rem;
             left: -0.25rem; right: -0.25rem;
-            background: linear-gradient(135deg, $gradient-c-1, $gradient-c-2, $gradient-c-3, $gradient-c-4, $gradient-c-5);
+            //background: linear-gradient(135deg, $gradient-c-1, $gradient-c-2, $gradient-c-3, $gradient-c-4, $gradient-c-5);
             content: '';
             z-index: -1;
             border-radius: 16px;
         }
+        */
 
         p {
             margin-bottom: 0 !important;
@@ -49,12 +50,16 @@ img {
     }
 
     .day-info {
-        span {
-            color: rgba($gradient-c-1, 0.7);
+        .time {
+            color: $accent-4;
         }
         h4 {
+            font-family: $small-header;
             font-size: 0.9rem;
             color: $primary-dark;
+        }
+        .loc {
+            color: $accent-3;
         }
 
     }

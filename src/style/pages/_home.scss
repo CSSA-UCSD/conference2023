@@ -1,6 +1,7 @@
 h1 {
     padding-left: 15px;
     padding-right: 15px;
+    padding-bottom: 15px;
 }
 
 @include media-md {
@@ -12,6 +13,17 @@ h1 {
 
 img {
     border-radius: 0.5rem;
+}
+
+.ital {
+    font-family: $header-font-2;
+    font-size: 6.4rem;
+}
+
+h3 {
+    font-family: $header-font;
+    font-size: 3.9rem;
+    line-height: 4rem;
 }
 
 /*
@@ -50,8 +62,11 @@ img {
     }
 
     .day-info {
+        font-size: 1.9rem;
+
         .time {
             color: $accent-4;
+            font-style: italic;
         }
         h4 {
             font-family: $small-header;
@@ -60,6 +75,7 @@ img {
         }
         .loc {
             color: $accent-3;
+            text-transform: uppercase;
         }
     }
 
@@ -121,23 +137,21 @@ img {
     &-title {
         h1 {
             font-family: $header-font;
-            //letter-spacing: 0.3rem;
             font-size: 6.9rem;
-            line-height: 4.7rem;
+            line-height: 84px;
+            letter-spacing: 0.03em;
+        }
+        .nowrap {
+            white-space: nowrap;
         }
         .ital {
-            font-family: $header-font2;
-            font-size: 6.4rem;
-            line-height: 3rem;
+            line-height: 84px;
+            letter-spacing: 0.03em;
         }
         #subhead {
             font-size: 5.2rem;
         }
-        h3 {
-            font-family: $header-font;
-            font-size: 3.9rem;
-            line-height: 4rem;
-        }
+
         /*
         @keyframes color-change {
             0% { background: -webkit-linear-gradient(135deg, $gradient-w-5, $gradient-c-1, $gradient-c-4, $gradient-w-5, $gradient-c-1, $gradient-c-4);  

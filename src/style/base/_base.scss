@@ -14,7 +14,7 @@
 
 // fonts
 $header-font: 'Futura-Heavy', sans-serif;
-$header-font2: 'Futura-Med-Ital', sans-serif;
+$header-font-2: 'Futura-Med-Ital', sans-serif;
 $small-header: 'Futura-Medium', sans-serif;
 $body-font: 'Helvetica', sans-serif;
 
@@ -52,21 +52,10 @@ body {
 }
 
 // type scale
-h1, h2, h3, h4, h5, h6 {
+h1, h3 {
     font-family: $header-font;
     text-transform: uppercase;
 }
-
-h1 {
-    font-size: 110px;
-    line-height: 72px;
-}
-
-h2 {
-    font-size: 110px;
-    line-height: 44px;
-}
-
 
 p {
     font-family: $body-font;
@@ -78,11 +67,6 @@ a {
     &:hover {
         color: inherit;
     }
-}
-
-.ital {
-    font-family: $header-font2;
-    font-size: 103px;
 }
 
 button {

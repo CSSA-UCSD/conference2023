@@ -1,6 +1,7 @@
 h1 {
     padding-left: 15px;
     padding-right: 15px;
+    padding-bottom: 15px;
 }
 
 @include media-md {
@@ -14,6 +15,16 @@ img {
     border-radius: 0.5rem;
 }
 
+.ital {
+    font-family: $header-font-2;
+    font-size: 6.4rem;
+}
+
+h3 {
+    font-family: $header-font;
+    font-size: 3.9rem;
+    line-height: 4rem;
+}
 
 /*
 .header-gradient {
@@ -26,6 +37,7 @@ img {
 /* Styling for Schedule Section */
 .schedule {
     .day-schedule-content {
+        /*
         position: relative;
         border: 0.25rem solid transparent;
         border-radius: 16px;
@@ -37,11 +49,12 @@ img {
             position: absolute;
             top: -0.25rem; bottom: -0.25rem;
             left: -0.25rem; right: -0.25rem;
-            background: linear-gradient(135deg, $gradient-c-1, $gradient-c-2, $gradient-c-3, $gradient-c-4, $gradient-c-5);
+            //background: linear-gradient(135deg, $gradient-c-1, $gradient-c-2, $gradient-c-3, $gradient-c-4, $gradient-c-5);
             content: '';
             z-index: -1;
             border-radius: 16px;
         }
+        */
 
         p {
             margin-bottom: 0 !important;
@@ -49,14 +62,21 @@ img {
     }
 
     .day-info {
-        span {
-            color: rgba($gradient-c-1, 0.7);
+        font-size: 1.9rem;
+
+        .time {
+            color: $accent-4;
+            font-style: italic;
         }
         h4 {
+            font-family: $small-header;
             font-size: 0.9rem;
             color: $primary-dark;
         }
-
+        .loc {
+            color: $accent-3;
+            text-transform: uppercase;
+        }
     }
 
     .day-img {
@@ -113,20 +133,23 @@ img {
         padding-top: 10vh;
     }
 
+    // main header with conference title
     &-title {
         h1 {
+            font-family: $header-font;
             font-size: 6.9rem;
-            line-height: 4rem;
+            line-height: 84px;
+            letter-spacing: 0.03em;
         }
-
-        h2 {
-            font-size: 6.4rem;
-            line-height: 4rem;
+        .nowrap {
+            white-space: nowrap;
         }
-
-        h3 {
+        .ital {
+            line-height: 84px;
+            letter-spacing: 0.03em;
+        }
+        #subhead {
             font-size: 5.2rem;
-            line-height: 4rem;
         }
 
         /*

@@ -52,11 +52,9 @@ function Day() {
                 <div className="content">
                     {DayScheduleData.map(day => {
                         return <div className="day" key={day.id}>
-                            <div className="schedule-title header-gradient">
-                                <h1>Day {day.id}</h1>
-                            </div>
+                            <h1>{day.name}</h1>
                             <h4>{getWeekday(day.date, "short")} {day.date} | {day.time}</h4>
-                            <span>📍{day.location}</span>
+                            <span>{day.location}</span>
                             {/* {Day1Component} */}
                             {day.events.map((item, key) => {
                                 return < Event key={key} item={item} />

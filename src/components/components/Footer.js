@@ -17,8 +17,8 @@ class Footer extends React.Component {
                     </div>
                 </div>
 
-                <div className="footer-copyright text-center py-3"><span className="copywrite">© 2022 </span>
-                    <a href="https://cssa-ucsd.org/"> <img src={CSSALogo} alt="CSSA"></img></a>
+                <div className="footer-copyright justify-content-center py-3 d-flex align-items-center"><span className="copywrite">© 2022 </span>
+                    <a href="https://cssa-ucsd.org/"> <img id="logo" src={CSSALogo} alt="CSSA"></img></a>
                 </div>
 
             </footer>

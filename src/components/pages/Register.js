@@ -23,7 +23,7 @@ class Register extends React.Component {
                             <h3>How to Register</h3>
                             <p>Register for the conference by filling in the Zoom form.</p>
                             <button className="gradient-button">
-                                <a className="" href="https://ucsd.zoom.us/meeting/register/tJ0kcuysrjsoHdI4R2riooSFJI0qz5s46bOk" target="_blank" rel="noopener noreferrer">Register Here</a>
+                                <a className="" href="http://tinyurl.com/cogsconference2023" target="_blank" rel="noopener noreferrer">Register Here</a>
                             </button>
                         </div> 
                         <div className="col-sm-6 pb-5">

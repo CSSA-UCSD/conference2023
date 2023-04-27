@@ -71,13 +71,15 @@ class Home extends React.Component {
                 </div>
                 
                 <h3><span className="ital">01</span> About</h3>
-                <p>Cognitive Science Student Association at UCSD invites you to join our 15th annual National Cognitive Science Conference! Our annual conference is a 3-day event that highlights how current global events impact the way in which we interact with the world around us. Join us for a packed schedule of engaging presentations, interactive workshops, and invaluable networking!</p>
-                <p>This year's theme of “The Cognitive Metamorphosis” will focus on the emerging adaptations of cognitive science in technology, healthcare, and current global issues.</p>
-                <p>The conference will be held hybrid through both Zoom and in-person events and split into three days from 04/26/2022 to 04/28/2022.</p>
-
-                <div className="home-intro-video py-5">
-                    {/* <iframe title="conference-2022" width="100%" height="500" src="https://www.youtube.com/embed/Gx60wEdPc7w" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe> */}
-                </div>
+                <p><em>CSSA's National Cognitive Science Conference is happening from May 1st to May 3rd!</em></p>
+                <p>
+                    <strong><em>‘Beyond the Mind: Cognitive Capacities’</em></strong> is a 3-day event that will explore different disciplines of cognitive science and
+                    how the study of cognition has shaped recent advancements in technology, academia, and industry. 
+                    Save the date for engaging keynote speakers, interactive workshops, and invaluable networking!
+                </p>
+                {/* <div className="home-intro-video py-5">
+                    <iframe title="conference-2022" width="100%" height="500" src="https://www.youtube.com/embed/Gx60wEdPc7w" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                </div> */}
                 <div className="speakers">
                     <div className="container py-5">
                         <div className="speakers-title header-gradient pt-5">

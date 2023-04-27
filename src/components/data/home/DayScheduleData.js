@@ -22,7 +22,7 @@ const DayScheduleData = [
                 time: "5:50-6:20pm"
             },
             {
-                title: "Workshop TBA: Dr. Lina Abarbanell",
+                title: "Workshop: Dr. Lina Abarbanell",
                 time: "6:20-7:10pm",
                 recording: ""
             }
@@ -46,7 +46,7 @@ const DayScheduleData = [
                 time: "5:50pm-6:20pm"
             },
             {
-                title: "Workshop TBA: Sam Hande",
+                title: "Workshop: Sam Hande",
                 time: "6:20-7:10pm",
                 recording: ""
             }
@@ -61,7 +61,7 @@ const DayScheduleData = [
         location: "Red Shoe Room @ PC West",
         events: [
             {
-                title: "Workshop TBA: Dr. Lauren Patrick",
+                title: "Workshop: Dr. Lauren Patrick",
                 time: "5-5:50pm",
                 recording: ""
             }, 
@@ -70,12 +70,12 @@ const DayScheduleData = [
                 time: "5:50-6:20pm"
             },
             {
-                title: "Workshop TBA: Dr. Yang Xu",
+                title: "Workshop: Dr. Yang Xu",
                 time: "6:20-7:10pm",
                 recording: ""
             }, 
             {
-                title: "TBA",
+                title: "Workshop: Maho Takahashi",
                 time: "6:20-7:10pm",
                 recording: ""
             },

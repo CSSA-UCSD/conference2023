@@ -64,7 +64,7 @@ class Home extends React.Component {
                     </div>
                     <div className="home-title col-sm-6 ">
                         <h1>Beyond</h1> 
-                        <h1><div className="nowrap"><span className="ital">The Mind</span></div></h1> 
+                        <h1><span className="nowrap"><span className="ital">The Mind</span></span></h1> 
                         <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam </i></p>
                         <h1><span className="ital" id="subhead"> Cognitive Capacities </span></h1>
                     </div>
@@ -81,7 +81,7 @@ class Home extends React.Component {
                 <div className="speakers">
                     <div className="container py-5">
                         <div className="speakers-title header-gradient pt-5">
-                            <h2><span className="ital">02</span> Speakers</h2>
+                            <h3><span className="ital">02</span> Speakers</h3>
                             <p className="px-5 mt-4">Soon to be released!</p>
                         </div>
                     </div>

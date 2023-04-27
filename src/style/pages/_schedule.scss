@@ -1,41 +1,4 @@
 .schedule {
-    // header
-    h1 {
-        font-size: 4.4rem;
-    }
-
-    .day {
-        padding-top: 2.5rem;
-
-        h1 {
-            font-size: 3.8rem;
-        }
-
-        h4 {
-            font-size: 2.5rem;
-            color: $accent-2;
-        }
-        span {
-            font-family: $header-font;
-        }
-        .day-info {
-            h2 {
-                font-family: $body-font;
-                font-size: 2.5rem;
-            }
-
-            h4 {
-                font-color: $accent-1;
-            }
-
-            p {
-                font-family: $body-font;
-            }
-        }
-    }
-
-
-
     .day-schedule {
         width: fit-content;
         .row {
@@ -47,10 +10,30 @@
                 padding-left: 0px;
                 font-size: 3.8rem;
             }
+
+            h4 {
+                color: $accent-2;
+            }
+
+            h4, span {
+                font-size: 2.5rem;
+                font-family: $header-font;
+            }
+
+            .day-info {
+                h2, h4 {
+                    font-family: $body-font;
+                    font-size: 2.5rem;
+                }
+
+                h4 {
+                    font-style: oblique;
+                    font-weight: bold;
+                    color: $accent-1;
+                }
+            }
         }
-        span {
-            color: $primary-dark;
-        }
+
         .sidebar {
             z-index: 100;
             width: 100%;

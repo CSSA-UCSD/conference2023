@@ -11,9 +11,7 @@ class Team extends React.Component {
         return (
             <div className="schedule pt-5">
                 <div className="container py-5">
-                    <div className="schedule-title header-gradient">
-                        <h1 className="pb-5">Schedule</h1>
-                    </div>
+                    <h1 className="pb-5">Schedule</h1>
                     <Day />
                     {/* {EventComponent} */}
 

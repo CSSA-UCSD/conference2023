@@ -29,6 +29,14 @@
             border-radius: 15px;
             border: 3px solid white;
             background: linear-gradient(125.99deg, rgba(101, 17, 208, 0.75) 24.81%, rgba(1, 223, 237, 0.75) 95.13%);
+            
+            span {
+                color: white;
+            }
+
+            &:hover {
+                background: linear-gradient(125.99deg, rgba(215, 0, 155, 0.75) 24.81%, rgba(69, 17, 208, 0.75) 95.13%);
+            }
         }
     }
 

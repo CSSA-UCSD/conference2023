@@ -10,14 +10,14 @@ class Navbar extends React.Component {
             <div>
                 <nav className="navbar">
                     <div className="container">
-                            <Link to="/" className="navbar-brand">
-                                <img src={LogoSVG} alt="CSSA @ UCSD Conference Logo" 
-                                    onMouseOver={e => e.currentTarget.src=Logo}
-                                    onMouseOut={e => e.currentTarget.src=LogoSVG}
-                                />
-                            </Link>
                         <div className="menu">
                             <ul className="nav">
+                                <li className='nav-item'>
+                                    <h6>
+                                        <Link to='/schedule' className='nav-link'>Home</Link>
+                                    </h6>
+                                </li>
+
                                 <li className='nav-item'>
                                     <h6>
                                         <Link to='/schedule' className='nav-link'>Schedule</Link>
@@ -30,16 +30,20 @@ class Navbar extends React.Component {
                                 </li>
                                 <li className='nav-item'>
                                     <h6>
-                                        <Link to='/register' className='nav-link'>Register</Link>
-                                    </h6>
-                                </li>
-                                <li className='nav-item'>
-                                    <h6>
                                         <a href='https://ucsd.zoom.us/j/99955400276' target="_blank" rel="noreferrer" className='nav-link'>Zoom</a>
                                     </h6>
                                 </li>
                             </ul>
                         </div>
+                            <h6 id="">
+                                <Link to='/register' className='nav-link' id="register"><span>Register</span></Link>
+                            </h6>
+                            {/* <Link to="/" className="navbar-brand">
+                                <img src={LogoSVG} alt="CSSA @ UCSD Conference Logo" 
+                                    onMouseOver={e => e.currentTarget.src=Logo}
+                                    onMouseOut={e => e.currentTarget.src=LogoSVG}
+                                />
+                            </Link> */}                        
                     </div>
                 </nav>
             </div>

@@ -9,11 +9,7 @@ import Event from "../../components/schedule/Event";
 import DayScheduleData from "../../data/home/DayScheduleData";
 
 function Day() {
-    // componentDidMount() {
-    //     AOS.init({
-    //         duration : 2000
-    //     });
-    // }
+
     useEffect(() => {
         AOS.init({
             duration: 2000

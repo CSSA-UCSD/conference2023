@@ -15,7 +15,9 @@ class Speaker extends React.Component {
     render() {
         return (
             <Popup
-                trigger={<button className="button col-md-6 col-lg-4 py-3"> 
+                trigger={
+                // <button className="button col-md-6 col-lg-3 py-3"> 
+                <button className="button speaker-button col py-3"> 
                 <div className="speaker" data-aos="fade-up" id={this.props.item.id}>
                     <div className="speaker-img">
                         <img src={ require(`../../../img/speakers/${this.props.item.img}`).default } 

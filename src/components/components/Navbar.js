@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
-import Logo from "../../assets/logo2023.png";
-import LogoSVG from "../../assets/logo2023SVG.svg";
+// import Logo from "../../assets/logo2023.png";
+// import LogoSVG from "../../assets/logo2023SVG.svg";
 
 const Tab = ({tab, onClick, currTab, zoom}) => {
     return <li className='nav-item'>
@@ -38,9 +38,6 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <Tab id="register" tab="register" onClick={changeTab} currTab={currTab}/>
-                {/* <h6 id="register">
-                    <Link to='/register' className='nav-link' onClick={() => changeTab('register')}><span>Register</span></Link>
-                </h6> */}
                 {/* <Link to="/" className="navbar-brand">
                     <img src={LogoSVG} alt="CSSA @ UCSD Conference Logo" 
                         onMouseOver={e => e.currentTarget.src=Logo}

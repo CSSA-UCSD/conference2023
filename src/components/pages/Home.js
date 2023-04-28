@@ -64,7 +64,7 @@ class Home extends React.Component {
                         <h1 className="text-nowrap ital" style={{ fontSize: '103px'}}>
                             The Mind
                         </h1>
-                        <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam </i></p>
+                        <p><i>CSSA's National Cognitive Science Conference is happening from May 1st to May 3rd!</i></p>
                     </div>
                     <div className="home-img col-sm-6 d-flex align-items-center">                        
                         <img src={IconSVG} alt="conference icon" />
@@ -75,11 +75,16 @@ class Home extends React.Component {
                 </div>
                 
                 <h3><span className="ital">01</span> About</h3>
-                <p><em>CSSA's National Cognitive Science Conference is happening from May 1st to May 3rd!</em></p>
                 <p>
-                    <strong><em>‘Beyond the Mind: Cognitive Capacities’</em></strong> is a 3-day event that will explore different disciplines of cognitive science and
-                    how the study of cognition has shaped recent advancements in technology, academia, and industry. 
-                    Save the date for engaging keynote speakers, interactive workshops, and invaluable networking!
+                    Delving into the depths of the brain, this year’s Conference aims to explore the abilities of the mind. 
+                    This year’s theme of <strong><em>"Beyond the Mind: Cognitive Capacities"</em></strong> will focus on comparing 
+                    and contrasting phenomena in the real world and weighing logic vs creativity.
+                </p>
+                <p>
+                    Attendees and presenters include distinguished researchers and scientists, reputable companies in related industries, 
+                    and lab representatives. This annual conference is the perfect event to attend if you are interested in academic 
+                    and career advancement opportunities, or simply want to deepen your knowledge of how the diverse applications of 
+                    Cognitive Science are shaping the future.
                 </p>
                 {/* <div className="home-intro-video py-5">
                     <iframe title="conference-2022" width="100%" height="500" src="https://www.youtube.com/embed/Gx60wEdPc7w" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>

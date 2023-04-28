@@ -19,13 +19,14 @@ h1 {
 
 .ital {
     font-family: $header-font-2;
-    font-size: 6.4rem;
+    font-size: 5.15rem;
+    line-height: 6.85rem;
 }
 
 h3 {
     font-family: $header-font;
-    font-size: 3.9rem;
-    line-height: 4rem;
+    font-size: 3.15rem;
+    line-height: 4.2rem;
 }
 
 /*
@@ -74,6 +75,7 @@ h3 {
 .home {
     p {
         font-size: 1.2rem;
+        text-transform: none;
     }
     
     &-section {
@@ -103,7 +105,7 @@ h3 {
             padding: 0;
         }
         .ital {
-            line-height: 84px;
+            line-height: 4.2rem;
         }
         #subhead {
             font-size: 4.15rem;

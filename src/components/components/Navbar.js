@@ -6,7 +6,7 @@ import LogoSVG from "../../assets/logo2023SVG.svg";
 
 const Tab = ({tab, onClick, currTab, zoom}) => {
     return <li className='nav-item'>
-        <h6>
+        <h6 id={tab}>
         { zoom
             ? <a href={zoom} target="_blank" rel="noreferrer" className='nav-link'>{tab}</a>
             : <Link to={`/${tab}`} className='nav-link' onClick={() => onClick(tab)}>
@@ -37,9 +37,10 @@ const Navbar = () => {
                         <Tab tab="zoom" onClick={changeTab} currTab={currTab} zoom="https://ucsd.zoom.us/j/99955400276" />
                     </ul>
                 </div>
-                <h6 id="register">
-                    <Link to='/register' className='nav-link'><span>Register</span></Link>
-                </h6>
+                <Tab id="register" tab="register" onClick={changeTab} currTab={currTab}/>
+                {/* <h6 id="register">
+                    <Link to='/register' className='nav-link' onClick={() => changeTab('register')}><span>Register</span></Link>
+                </h6> */}
                 {/* <Link to="/" className="navbar-brand">
                     <img src={LogoSVG} alt="CSSA @ UCSD Conference Logo" 
                         onMouseOver={e => e.currentTarget.src=Logo}

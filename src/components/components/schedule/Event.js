@@ -17,8 +17,12 @@ class Event extends React.Component {
                 <div className="day-img">
                 </div>
                 <div className="day-info">
-                    <h4>{this.props.item.time}</h4>
-                    <h2>{this.props.item.title}</h2>
+                    <div className="timeContainer">
+                        <h4>{this.props.item.time}</h4>
+                    </div>
+                    <div>
+                        <h2>{this.props.item.title}</h2>
+                    </div>
                     <p style={{'color':'#0484fb'}}>{this.props.item.description}</p>
                     <div>
                         {this.props.item.url ?

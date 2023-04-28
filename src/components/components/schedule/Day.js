@@ -7,6 +7,7 @@ import StickyBox from "react-sticky-box";
 
 import Event from "../../components/schedule/Event";
 import DayScheduleData from "../../data/home/DayScheduleData";
+import PlanetIcon from "../../../assets/planetIcon.png";
 
 function Day() {
 
@@ -48,9 +49,10 @@ function Day() {
                 <div className="content">
                     {DayScheduleData.map(day => {
                         return <div className="day" key={day.id}>
+                            <img className="planet" src={PlanetIcon} alt="Planet Image"/>
                             <h1>{day.name}</h1>
                             <h4>{getWeekday(day.date, "short")} {day.date} | {day.time}</h4>
-                            <span>{day.location}</span>
+                            <span className="location">{day.location}</span>
                             {/* {Day1Component} */}
                             {day.events.map((item, key) => {
                                 return < Event key={key} item={item} />
@@ -58,6 +60,10 @@ function Day() {
                             }
                         </div>
                     })}
+                    <img className="planet" src={PlanetIcon} alt="Planet Image"/>
+                    <h1>THANK YOU FOR VISITING!</h1>
+                    <h4>CSSA@UCSD</h4>
+                    <span className="location">Cognitive Science Student Association</span>
                 </div>
             </div>
         </div>

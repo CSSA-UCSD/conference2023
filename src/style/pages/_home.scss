@@ -37,9 +37,6 @@ h3 {
 */
 
 /* Styling for Schedule Section */
-.home {
-    
-}
 
 
 /* Styling for Speakers Section */
@@ -76,7 +73,7 @@ h3 {
 
 .home {
     p {
-        font-size: 24px;
+        font-size: 1.2rem;
     }
     
     &-section {
@@ -95,26 +92,26 @@ h3 {
 
     // main header with conference title
     &-title {
+        font-family: $header-font;
+        text-transform: uppercase;
+
         h1 {
-            font-family: $header-font;
-            font-size: 6.9rem;
-            line-height: 84px;
+            font-size: 5.5rem;
+            line-height: 5.5rem;
             letter-spacing: 0.03em;
-        }
-        .nowrap {
-            white-space: nowrap;
+            width: fit-content;
+            padding: 0;
         }
         .ital {
             line-height: 84px;
-            letter-spacing: 0.03em;
         }
         #subhead {
-            font-size: 5.2rem;
+            font-size: 4.15rem;
+            line-height: 4rem;
+            margin-left: -7.5rem;
+            padding-bottom: 2.5rem;
         }
-
-
         
-
         /*
         @keyframes color-change {
             0% { background: -webkit-linear-gradient(135deg, $gradient-w-5, $gradient-c-1, $gradient-c-4, $gradient-w-5, $gradient-c-1, $gradient-c-4);  
@@ -181,6 +178,9 @@ h3 {
         */
     }
     &-img {
+        z-index: -1;
+        padding: 0;
+        // margin-left: -4.5rem;
         img {
             width: inherit;
         }

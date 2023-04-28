@@ -27,7 +27,7 @@ const Navbar = () => {
     }
 
     return (
-        <nav className="navbar mt-4">
+        <nav className="navbar my-4">
             <div className="container">
                 <div className="menu">
                     <ul className="nav">

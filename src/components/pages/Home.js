@@ -58,15 +58,19 @@ class Home extends React.Component {
 
         return (
             <div className="home container">
-                <div className="row py-5">
-                    <div className="home-img col-sm-6 d-flex align-items-center">
+                <div className="row flex-nowrap py-5 home-title">
+                    <div className="col-sm-3 p-0">
+                        <h1>Beyond</h1> 
+                        <h1 className="text-nowrap ital" style={{ fontSize: '103px'}}>
+                            The Mind
+                        </h1>
+                        <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam </i></p>
+                    </div>
+                    <div className="home-img col-sm-6 d-flex align-items-center">                        
                         <img src={IconSVG} alt="conference icon" />
                     </div>
-                    <div className="home-title col-sm-6 ">
-                        <h1>Beyond</h1> 
-                        <h1><span className="nowrap"><span className="ital">The Mind</span></span></h1> 
-                        <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam </i></p>
-                        <h1><span className="ital" id="subhead"> Cognitive Capacities </span></h1>
+                    <div className="col-sm-3 p-0 d-flex align-items-end">
+                        <h1 className="text-center ital" id="subhead">Cognitive Capacities</h1>
                     </div>
                 </div>
                 

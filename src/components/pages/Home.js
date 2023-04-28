@@ -61,7 +61,7 @@ class Home extends React.Component {
                 <div className="row flex-nowrap py-5 home-title">
                     <div className="col-sm-3 p-0">
                         <h1>Beyond</h1> 
-                        <h1 className="text-nowrap ital" style={{ fontSize: '103px'}}>
+                        <h1 className="text-nowrap ital" id="ital">
                             The Mind
                         </h1>
                         <p><i>CSSA's National Cognitive Science Conference is happening from May 1st to May 3rd!</i></p>

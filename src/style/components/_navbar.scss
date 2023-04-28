@@ -38,6 +38,10 @@
                 background: linear-gradient(125.99deg, rgba(215, 0, 155, 0.75) 24.81%, rgba(69, 17, 208, 0.75) 95.13%);
             }
         }
+
+        @media (max-width: 576px) {
+            justify-content: center;
+        }
     }
 
     .navbar-brand{
@@ -59,7 +63,7 @@
     }
 }
 
-@include media-md {
+@include media-sm {
     .navbar {
         height: 76px;
         .navbar-brand {

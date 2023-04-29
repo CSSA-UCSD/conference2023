@@ -53,6 +53,16 @@ h3 {
         /* Reverse Column Order */
         -webkit-flex-flow: column-reverse;
         flex-flow: column-reverse;
+
+        .speaker-img {
+            object-fit: cover;
+        }
+
+        .speaker-title {
+            font-family: $header-font;
+            text-transform: uppercase;
+        }
+        
     }
     .carousel-arrows {
         p {

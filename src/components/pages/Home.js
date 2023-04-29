@@ -48,9 +48,9 @@ class Home extends React.Component {
                     <div className="speakers-home-link mr-auto align-self-center">
                         <h3><Link to='/speakers' className='nav-link'><span className="header-gradient">Speakers</span></Link></h3>
                     </div>
-                    {/* <div className="buttons pr-3">
+                    {/*<div className="buttons pr-3">
                         <button className="pr-3 carousel-arrows" onClick={() => previous()}><p>&#8249;</p></button>
-                        <button className="carousel-arrows" onClick={() => next()}><p>&#8250;</p></button>
+                        <button className="carousel-arrows" onClick={() => next()}><img src="src/assets/planetIcon.png" /></button>
                     </div> */}
                 </div>
             );
@@ -91,32 +91,27 @@ class Home extends React.Component {
                 </div> */}
                 <div className="speakers">
                     <div className="container py-5">
-                        <div className="speakers-title header-gradient pt-5">
-                            <h3><span className="ital">02</span> Speakers</h3>
-                            <p className="px-5 mt-4">Soon to be released!</p>
-                        </div>
+                        <h3><span className="ital">02</span> Speakers</h3>
+                        <div className="speakers-carousel">
+                            <Carousel 
+                            responsive={responsive}
+                            infinite={true}
+                            autoPlay={true}
+                            autoPlaySpeed={3500}
+                            centerMode={true}
+                            arrows={true}
+                            renderButtonGroupOutside={true} 
+                            customButtonGroup={<ButtonGroup />}
+                            >
+                            {SpeakerComponent}
+                            </Carousel>
+                        </div>                    
                     </div>
                 </div>
                 <div className="schedule">
                     <h3><Link to='/schedule' className='nav-link'><span className="ital">03</span> Schedule</Link></h3>
                     {ScheduleComponent}
                 </div>
-                {/* <div className="speakers pb-5">
-                    <div className="speakers-carousel">
-                        <Carousel 
-                        responsive={responsive}
-                        infinite={true}
-                        autoPlay={true}
-                        autoPlaySpeed={3500}
-                        centerMode={true}
-                        arrows={true}
-                        renderButtonGroupOutside={true} 
-                        customButtonGroup={<ButtonGroup />}
-                        >
-                           {SpeakerComponent}
-                        </Carousel>
-                    </div>
-                </div> */}
             </div>
         );
     }

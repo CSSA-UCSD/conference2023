@@ -17,7 +17,6 @@ function Events() {
 
     return (
         <div className="container py-5">
-            <h1 className="">Speakers</h1>
             { DayScheduleData.map((day) => {
                     let daySpeakers = SpeakerData.filter(speaker => speaker.day === day.id);
                     return <div className="mt-5" key={day.id}>

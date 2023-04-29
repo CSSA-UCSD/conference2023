@@ -37,7 +37,7 @@
         .sidebar {
             z-index: 100;
             width: 100%;
-            background-color: rgba($primary-light, .9);
+            background-color: black;
             display: flex;
             
             @include media-lg {

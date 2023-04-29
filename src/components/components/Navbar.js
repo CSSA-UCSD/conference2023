@@ -34,7 +34,7 @@ const Navbar = () => {
                         <Tab tab='' onClick={changeTab} currTab={currTab}/>
                         <Tab tab="schedule" onClick={changeTab} currTab={currTab}/>
                         <Tab tab="speakers" onClick={changeTab} currTab={currTab}/>
-                        <Tab tab="zoom" onClick={changeTab} currTab={currTab} zoom="https://ucsd.zoom.us/j/99955400276" />
+                        <Tab tab="zoom" onClick={changeTab} currTab={currTab} zoom="https://ucsd.zoom.us/w/93617051961" />
                     </ul>
                 </div>
                 <Tab id="register" tab="register" onClick={changeTab} currTab={currTab}/>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import AOS from "aos";
 import '../../style/main.scss'
 import { Link } from "react-router-dom";
@@ -14,15 +14,16 @@ import 'react-multi-carousel/lib/styles.css';
 
 import IconSVG from '../../assets/logo2023SVG.svg';
 
-class Home extends React.Component {
+const Home = () => {
 
-    componentDidMount() {
+    useEffect(() => {
+        document.body.className ="home";
         AOS.init({
             duration: 2000
         });
-    }
+    })
 
-    render() {
+
         const ScheduleComponent = DayScheduleData.map(item => < DaySchedule key={item.id} item={item} />);
         const SpeakerComponent = SpeakerData.map(item => < SpeakerPreview key={item.id} item={item} />);
         const responsive = {
@@ -57,7 +58,7 @@ class Home extends React.Component {
         };
 
         return (
-            <div className="home container">
+            <div className="container">
                 <div className="row flex-nowrap py-5 home-title">
                     <div className="col-sm-3 p-0">
                         <h1>Beyond</h1> 
@@ -73,19 +74,20 @@ class Home extends React.Component {
                         <h1 className="text-center ital" id="subhead">Cognitive Capacities</h1>
                     </div>
                 </div>
-                
-                <h3><span className="ital">01</span> About</h3>
-                <p>
-                    Delving into the depths of the brain, this year’s Conference aims to explore the abilities of the mind. 
-                    This year’s theme of <strong><em>"Beyond the Mind: Cognitive Capacities"</em></strong> will focus on comparing 
-                    and contrasting phenomena in the real world and weighing logic vs creativity.
-                </p>
-                <p>
-                    Attendees and presenters include distinguished researchers and scientists, reputable companies in related industries, 
-                    and lab representatives. This annual conference is the perfect event to attend if you are interested in academic 
-                    and career advancement opportunities, or simply want to deepen your knowledge of how the diverse applications of 
-                    Cognitive Science are shaping the future.
-                </p>
+                <div id="about">
+                    <h3><span className="ital">01</span> About</h3>
+                    <p>
+                        Delving into the depths of the brain, this year’s Conference aims to explore the abilities of the mind. 
+                        This year’s theme of <strong><em>"Beyond the Mind: Cognitive Capacities"</em></strong> will focus on comparing 
+                        and contrasting phenomena in the real world and weighing logic vs creativity.
+                    </p>
+                    <p>
+                        Attendees and presenters include distinguished researchers and scientists, reputable companies in related industries, 
+                        and lab representatives. This annual conference is the perfect event to attend if you are interested in academic 
+                        and career advancement opportunities, or simply want to deepen your knowledge of how the diverse applications of 
+                        Cognitive Science are shaping the future.
+                    </p>
+                </div>
                 {/* <div className="home-intro-video py-5">
                     <iframe title="conference-2022" width="100%" height="500" src="https://www.youtube.com/embed/Gx60wEdPc7w" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div> */}
@@ -119,7 +121,6 @@ class Home extends React.Component {
                 </div> */}
             </div>
         );
-    }
 }
 
 export default Home;

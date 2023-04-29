@@ -63,7 +63,7 @@ const SpeakerData = [
         id: 7,
         name: "Dr. Lauren Patrick",
         day: 3,
-        event: "Day 3 Workshop",
+        event: "Day 3 (5/3) Workshop",
         img: 'LaurenPatrick.jpeg',
         title: "Postdoctoral Researcher @ Kable Lab & Wharton Neuroscience Initiative, UPenn",
         bio: "",

@@ -65,7 +65,7 @@ const SpeakerData = [
         day: 3,
         event: "TBD",
         img: 'LaurenPatrick.jpeg',
-        title: "Postdoctoral Researcher @UPenn",
+        title: "Postdoctoral Researcher @ Kable Lab & Wharton Neuroscience Initiative, UPenn",
         bio: "",
         link: "https://www.linkedin.com/in/lauren-patrick-phd-0400b888/",
     },
@@ -75,7 +75,7 @@ const SpeakerData = [
         day: 3,
         event: "TBD",
         img: 'YangXu.jpeg',
-        title: "Assistant Professor of Computer Science @SDSU",
+        title: "Assistant Professor of Computer Science @ SDSU, Computational Linguistics and Cognitive Sciences Lab",
         bio: "",
         link: "https://www.linkedin.com/in/yang-xu-0aa92036/"
     },

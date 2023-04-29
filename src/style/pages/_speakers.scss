@@ -58,8 +58,8 @@
 
             img {
                 border-radius: 24px;
-                width: 300px;
-                height: 300px;
+                width: 383px;
+                height: 383px;
                 object-fit: cover;
             }
 
@@ -111,6 +111,7 @@
     border-radius: 16px;
     .content {
         img {
+            object-fit: cover;
             width: 100%;
         }
         .header-description {

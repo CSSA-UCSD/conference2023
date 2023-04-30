@@ -1,6 +1,7 @@
 .schedule {
+    overflow-x: hidden;
     .day-schedule {
-        width: fit-content;
+        width: 100%;
         .row {
             margin-right: 15px;
             margin-left: 15px;
@@ -18,7 +19,6 @@
                 font-size: 3rem;
                 white-space: nowrap;
                 margin-bottom: 0;
-                margin-top: 30px;
             }
 
             h4 {
@@ -42,35 +42,25 @@
               font-family: $body-font;
             }
 
-            .events {
-              margin-top: 50px;
-            }
-
             .day-info {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
 
                 h2, h4 {
                     font-family: $body-font;
                     font-size: 1.2rem;
                     translate: 152px;
-                    margin-bottom: -30px;
-                }
-                
-                h2 {
-                    white-space: nowrap;
-                    margin-right: 50px;
+                    margin-bottom: -25px;
                 }
 
                 h4 {
                     font-style: oblique;
                     font-weight: bold;
                     color: $accent-1;
+                    translate: 710px;
                 }
 
-                .timeContainer {
-                  width: 700px;
-                  text-align: right;
-                  float: right;
-                }
             }
         }
 

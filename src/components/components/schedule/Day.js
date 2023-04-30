@@ -54,7 +54,7 @@ function Day() {
                             <h4>{getWeekday(day.date, "short")} {day.date} | {day.time}</h4>
                             <span className="location">{day.location}</span>
                             {/* {Day1Component} */}
-                            <div className="events">
+                            <div className="my-5">
                               {day.events.map((item, key) => {
                                   return < Event key={key} item={item} />
                               })

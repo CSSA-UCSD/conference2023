@@ -13,16 +13,10 @@ class Event extends React.Component {
     render() {
 
         return (
-            <div className="day-schedule pb-5" data-aos="fade-up">
-                <div className="day-img">
-                </div>
+            <div className="day-schedule pb-4" data-aos="fade-up">
                 <div className="day-info">
-                    <div className="timeContainer">
-                        <h4>{this.props.item.time}</h4>
-                    </div>
-                    <div>
-                        <h2>{this.props.item.title}</h2>
-                    </div>
+                    <h2>{this.props.item.title}</h2>
+                    <h4>{this.props.item.time}</h4>
                     {/* <p style={{'color':'#0484fb'}}>{this.props.item.description}</p> */}
                     <div>
                         {this.props.item.url ?

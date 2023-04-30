@@ -9,7 +9,7 @@ import DayScheduleData from "../data/home/DayScheduleData";
 function Events() {
 
     useEffect(() => {
-        document.body.classList.add('speakers');
+        document.body.className = 'speakers';
         AOS.init({
             duration: 2000
         });

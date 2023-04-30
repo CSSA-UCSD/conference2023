@@ -87,9 +87,9 @@ const Home = () => {
                     and career advancement opportunities, or simply want to deepen your knowledge of how the diverse applications of
                     Cognitive Science are shaping the future.
                 </p>
-            </div>
+            </div> 
             {/* <div className="home-intro-video py-5">
-                    <iframe title="conference-2022" width="100%" height="500" src="https://www.youtube.com/embed/Gx60wEdPc7w" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <iframe title="conference-2022" width="100%" height="500" src="https://drive.google.com/file/d/1aVVW13imnnutBcy_ufSnogzBe6UB2o7D/view?pli=1" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div> */}
             <div className="speakers">
                 <div className="container py-5">

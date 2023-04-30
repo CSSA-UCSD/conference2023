@@ -17,6 +17,8 @@
                 padding-left: 0px;
                 font-size: 3rem;
                 white-space: nowrap;
+                margin-bottom: 0;
+                margin-top: 30px;
             }
 
             h4 {
@@ -35,14 +37,22 @@
               margin-bottom: 30px;
             }
 
+            #cssa {
+              font-style: italic;
+              font-family: $body-font;
+            }
+
+            .events {
+              margin-top: 50px;
+            }
+
             .day-info {
 
                 h2, h4 {
                     font-family: $body-font;
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
                     translate: 152px;
-                    margin: auto;
-                    margin-bottom: -20px;
+                    margin-bottom: -30px;
                 }
                 
                 h2 {

@@ -23,7 +23,7 @@ class Event extends React.Component {
                     <div>
                         <h2>{this.props.item.title}</h2>
                     </div>
-                    <p style={{'color':'#0484fb'}}>{this.props.item.description}</p>
+                    {/* <p style={{'color':'#0484fb'}}>{this.props.item.description}</p> */}
                     <div>
                         {this.props.item.url ?
                             <div>

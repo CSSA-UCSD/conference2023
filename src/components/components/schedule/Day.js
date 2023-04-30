@@ -54,16 +54,18 @@ function Day() {
                             <h4>{getWeekday(day.date, "short")} {day.date} | {day.time}</h4>
                             <span className="location">{day.location}</span>
                             {/* {Day1Component} */}
-                            {day.events.map((item, key) => {
-                                return < Event key={key} item={item} />
-                            })
-                            }
+                            <div className="events">
+                              {day.events.map((item, key) => {
+                                  return < Event key={key} item={item} />
+                              })
+                              }
+                            </div>
                         </div>
                     })}
                     <img className="planet" src={PlanetIcon} alt="Planet Image"/>
                     <h1>THANK YOU FOR VISITING!</h1>
                     <h4>CSSA@UCSD</h4>
-                    <span className="location">Cognitive Science Student Association</span>
+                    <h4 id="cssa">Cognitive Science Student Association</h4>
                 </div>
             </div>
         </div>

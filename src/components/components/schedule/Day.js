@@ -30,7 +30,7 @@ function Day() {
 
     return (
         <div className="day-schedule pb-5" data-aos="fade-up">
-            <div className="row" style={{ display: 'flex', alignItems: 'flex-start' }}>
+            <div className="row" style={{ display: 'flex' }}>
                 <StickyBox offsetBottom={40} className="sidebar mx-auto" >
                     {/* <div className=""> */}
                     <ul>
@@ -53,7 +53,6 @@ function Day() {
                             <h1>{day.name}</h1>
                             <h4>{getWeekday(day.date, "short")} {day.date} | {day.time}</h4>
                             <span className="location">{day.location}</span>
-                            {/* {Day1Component} */}
                             <div className="my-5">
                               {day.events.map((item, key) => {
                                   return < Event key={key} item={item} />

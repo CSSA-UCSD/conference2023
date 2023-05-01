@@ -1,7 +1,13 @@
 .schedule {
-    overflow-x: hidden;
     .day-schedule {
-        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-family: $body-font;
+
+        .content {
+            width: 100%;
+            // flex-direction: column;
+        }
         .row {
             margin-right: 15px;
             margin-left: 15px;
@@ -23,7 +29,7 @@
 
             h4 {
                 color: $accent-2;
-                translate: 152px;
+                // translate: 152px;
             }
 
             h4, span {
@@ -33,7 +39,7 @@
 
             .location {
               display: flex;
-              translate: 152px;
+            //   translate: 152px;
               margin-bottom: 30px;
             }
 
@@ -43,24 +49,24 @@
             }
 
             .day-info {
-                display: flex;
-                flex-direction: column;
-                width: 100%;
+                // display: flex;
+                // flex-direction: column;
+                // width: 100%;
 
-                h2, h4 {
-                    font-family: $body-font;
-                    font-size: 1.2rem;
-                    translate: 152px;
-                    margin-bottom: -25px;
-                }
+                // h2, h4 {
+                //     font-family: $body-font;
+                //     font-size: 1.2rem;
+                //     // translate: 152px;
+                //     margin-bottom: -25px;
+                // }
 
-                h4 {
-                    font-style: oblique;
-                    font-weight: bold;
-                    color: $accent-1;
-                    translate: 710px;
-                }
-
+                // h4 {
+                //     font-style: oblique;
+                //     font-weight: bold;
+                //     color: $accent-1;
+                //     // translate: 710px;
+                // }
+                    display: inherit;
             }
         }
 

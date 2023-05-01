@@ -19,13 +19,14 @@ h1 {
 
 .ital {
     font-family: $header-font-2;
-    font-size: 6.4rem;
+    font-size: 5.15rem;
+    line-height: 6.85rem;
 }
 
 h3 {
     font-family: $header-font;
-    font-size: 3.9rem;
-    line-height: 4rem;
+    font-size: 3.15rem;
+    line-height: 4.2rem;
 }
 
 /*
@@ -35,11 +36,6 @@ h3 {
     -webkit-text-fill-color: transparent;
 }
 */
-
-/* Styling for Schedule Section */
-.home {
-    
-}
 
 
 /* Styling for Speakers Section */
@@ -55,6 +51,40 @@ h3 {
         /* Reverse Column Order */
         -webkit-flex-flow: column-reverse;
         flex-flow: column-reverse;
+
+        .speaker-img {
+            object-fit: cover;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+            border: 4px solid #FFFFFF;
+            border-radius: 30px;
+            height: 12rem;
+            width: 100%;
+
+            @media (max-width: 768px) {
+                border-width: 2.5px;
+            }
+            @include media-md {
+                height: 14rem;    
+            }
+            @include media-lg {
+                height: 19rem;
+            }
+            @media (min-width: 1280px) {
+                height: 25rem;
+            }
+        }
+
+        .speaker-title {
+            font-family: $header-font;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 2rem;
+            p {
+                line-height: 1.2rem;
+                font-size: 1rem;
+            }
+        }
+        
     }
     .carousel-arrows {
         p {
@@ -66,15 +96,49 @@ h3 {
     }
 }
 
-/*
-.speaker-img {
-    img {
-        width: 100%;
-    }
-}
-*/
 
 .home {
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 29.99%),
+                linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 29.46%),
+                linear-gradient(0deg, rgba(69, 17, 208, 0.2), #4511d033);
+    background-image: url("../../assets/purpleGalaxy.png");
+    // , url("../../assets/orangeGalaxy.png"), url("../../assets/borealis.png");
+    background-size: contain;
+    // background-repeat: no-repeat;
+
+    p {
+        font-size: 1.2rem;
+        text-transform: none;
+    }
+
+    #about:before {
+        content: '';
+        background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 49.55%),
+                    linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 92.65%),
+                    linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 32.44%),
+                    linear-gradient(270deg, rgba(0, 0, 0, 0.6) 0.03%, rgba(0, 0, 0, 0) 26.85%),
+                    linear-gradient(0deg, rgba(69, 17, 208, 0.2), rgba(69, 17, 208, 0.2));
+        background-image: url("../../assets/purpleGalaxy.png");
+        // background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        position:absolute;
+        left:0;
+        z-index: -1;
+    }
+
+    #about:before {
+        transform: scaleY(-1);
+    }
+
+    // #about {
+    //     // background-image: url("../../assets/orangeGalaxy.png");
+    //     display:block;
+    //     background-size: contain;
+    //     // width: 100vw;
+    // }
+    
     &-section {
         padding-bottom: 1rem;
         width: inherit;
@@ -91,26 +155,136 @@ h3 {
 
     // main header with conference title
     &-title {
+        font-family: $header-font;
+        text-transform: uppercase;
+        
         h1 {
-            font-family: $header-font;
-            font-size: 6.9rem;
-            line-height: 84px;
+            font-size: 5.5rem;
+            line-height: 5.5rem;
             letter-spacing: 0.03em;
+            width: fit-content;
+            padding: 0;
         }
-        .nowrap {
-            white-space: nowrap;
-        }
-        .ital {
-            line-height: 84px;
-            letter-spacing: 0.03em;
+        #ital {
+            line-height: 4.2rem;
+            font-size: 5.15rem;
         }
         #subhead {
-            font-size: 5.2rem;
+            font-size: 4.15rem;
+            line-height: 4rem;
+            margin-left: -7.5rem;
+            padding-bottom: 2.5rem;
         }
 
+        @media (max-width: 1380px) {
+            h1 {
+                font-size: 5rem;
+                line-height: 3.5rem;
+            }
+            #ital {
+                font-size: 4.5rem;
+            }
+            #subhead {
+                font-size: 3.2rem;
+                line-height: 3rem;
+                padding-bottom: 2rem;
+                margin-left: -8.5rem;
+            }
+        }
 
+        @media (max-width: 1140px) {
+            h1 {
+                font-size: 4.5rem !important;
+            }
+            #ital {
+                font-size: 3.75rem !important;
+            }
+            #subhead {
+                font-size: 2.9rem !important;
+                line-height: 2.75rem;
+                margin-left: -6.5rem;
+                padding-bottom: 1rem;
+            }
+        }
         
+        // @include media-md {
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 3.9rem !important;
+                line-height: 2rem;
+            }
+            #ital {
+                font-size: 3.25rem !important;
+            }
+            #subhead {
+                font-size: 2.5rem !important;
+                margin-left: -4.75rem;
+                line-height: 2.5rem;
+            }
+        }
 
+        @media (max-width: 768px) {
+        // @include media-sm {
+            h1 {
+                font-size: 3rem !important;
+                line-height: 0.5rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+            #ital {
+                font-size: 2.75rem !important;
+            }
+            #subhead {
+                font-size: 2.1rem !important;
+                line-height: 2.2rem;
+                padding-bottom: 2rem;
+                margin-left: -6.5rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            padding: 5%;
+            h1 {
+                font-size: 2.3rem !important;
+                line-height: 1.5rem;
+                // margin: 0;
+            }
+            p {
+                font-size: .9rem;
+                width: 90%;
+            }
+            #ital{
+                font-size: 2rem !important;
+                line-height: 1.5rem;
+            }
+            #subhead {
+                font-size: 1.4rem !important;
+                line-height: 1.4rem;
+                padding-bottom: .75rem;
+                margin-left: -4rem;
+            }
+        }
+
+        @media (max-width: 430px) {
+            p {
+                font-size: .75rem;
+                width: 80%;
+            }
+            #subhead {
+                font-size: 1.2rem !important;
+                padding-bottom: 0;
+                line-height: 1.2rem;
+                margin-left: -3.5rem;
+            }
+        }
+
+        @media (max-width: 395px) {
+            #subhead {
+                margin-bottom:-.5rem;
+                margin-left: -4.3rem;
+            }
+        }
         /*
         @keyframes color-change {
             0% { background: -webkit-linear-gradient(135deg, $gradient-w-5, $gradient-c-1, $gradient-c-4, $gradient-w-5, $gradient-c-1, $gradient-c-4);  
@@ -177,6 +351,9 @@ h3 {
         */
     }
     &-img {
+        z-index: -1;
+        padding: 0;
+        // margin-left: -4.5rem;
         img {
             width: inherit;
         }
@@ -186,6 +363,18 @@ h3 {
             @include media-md {
                 display: block;
             }
+        }
+
+        @media (min-width: 576px) and (max-width: 768px) {
+            margin-left: -3rem;
+            flex: 0 0 70%;
+            max-width: 70%;
+        }
+
+        @media (max-width: 576px) {
+            margin-left: -4rem;
+            flex: 0 0 60%;
+            max-width: 60%;
         }
     }
 

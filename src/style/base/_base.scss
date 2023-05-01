@@ -47,12 +47,20 @@ $gradient-w-5: #F48D54;
 
 // body colors
 body {
-    background: black;
+    background-color: black !important;
     color: $primary-dark;
 }
 
+// adjust max container size
+.container {
+    // Large devices (desktops)
+    @media (min-width: 1400px) {
+        max-width: 1320px;
+    }
+}
+
 // type scale
-h1, h3 {
+h1, h3, h6 {
     font-family: $header-font;
     text-transform: uppercase;
 }

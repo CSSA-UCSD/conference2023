@@ -1,113 +1,93 @@
 const SpeakerData = [
     {
         id: 1,
-        name: "Nate Bolt",
+        name: "Dr. David Danks",
         day: 1,
-        event: "Day 1 (4/26) Keynote Speaker",
-        img: "NateBolt.jpg",
-        title: "Founder, Ethnio",
+        event: "Day 1 (5/1) Keynote Speaker",
+        img: "DavidDanks.jpg",
+        title: "Professor of Data Science and Philosophy @UCSD",
         bio: "",
-        link: "https://www.linkedin.com/in/boltron/"
+        link: "https://www.linkedin.com/in/david-danks-21538613"
     },
     {
         id: 2,
-        name: "Dr. Ben Cipollini",
+        name: "Dr. Linda Abarbanell",
         day: 1,
-        event: "Day 1 Workshop: Transitioning from Academia to Industry",
-        img: "BenCipollini.jpg",
-        title: "Data Science Manager at Facebook",
+        event: "Day 1 Workshop: Language, Culture, and Cognition Talk",
+        img: "LindaAbarbanell.jpg",
+        title: "Professor of Psychology @SDSU",
         bio: "",
-        link: "https://www.linkedin.com/in/social-sector-data-insights/"
+        link: ""
     },
     {
         id: 3,
-        name: "Vasudev Lal",
+        name: "Meghan Yiu",
         day: 2,
-        event: "Day 2 (4/27) Keynote Speaker",
-        img: "VasudevLal.jpg",
-        title: "AI/ML Research Scientist at Intel Labs",
+        event: "Day 2 (5/2) Workshop: UX Pathways Talk",
+        img: "MeghanYiu.jpeg",
+        title: "User Experience Designer @Epic",
         bio: "",
-        link: "https://www.linkedin.com/in/vasudev-lal-79bb336/"
+        link: "https://www.linkedin.com/in/meghanyiu/"
     },
     {
         id: 4,
-        name: "Stephanie Alfonso",
+        name: "Kayla Monnette",
         day: 2,
-        event: "Day 2 Workshop: Neuroscience",
-        img: "StephanieAlfonso.jpg",
-        title: "Instructor at UCSD",
+        event: "Day 2 Workshop: UX Pathways Talk",
+        img: "KaylaMonnette.png",
+        title: "User Experience Designer @Epic",
         bio: "",
-        link: "https://www.linkedin.com/in/stephanie-alfonso-19793bab/"
+        link: "https://www.linkedin.com/in/kaylamonnette/"
     },
     {
         id: 5,
-        name: "Ana Chkhaidze",
-        day: 3,
-        event: "Career Panel",
-        img: "AnaChkhaidze.jpg",
-        title: "PhD Student at UCSD",
+        name: "Sam Hande",
+        day: 2,
+        event: "Day 2 Workshop",
+        img: "SamHande.jpg",
+        title: "Software Engineer @American Express, Former CSSA President",
         bio: "",
-        link: "https://www.linkedin.com/in/ana-chkhaidze-451765158/"
+        link: ""
     },
     {
         id: 6,
-        name: "Robert Kaufman",
-        day: 3,
-        event: "Career Panel",
-        img: "RobertKaufman.jpg",
-        title: "PhD Student at UCSD",
+        name: "Phillip Lagoc",
+        day: 2,
+        event: "Day 2 Workshop",
+        img: "PhillipLagoc.jpg",
+        title: "Product Analyst in Gaming @Sensor Tower",
         bio: "",
-        link: "https://www.linkedin.com/in/robertakaufman/"
+        link: "https://www.linkedin.com/in/philliplagoc/"
     },
     {
         id: 7,
-        name: "Phi Nguyen",
+        name: "Dr. Lauren Patrick",
         day: 3,
-        event: "Career Panel",
-        img: 'Phi_Nguyen.jpeg',
-        title: "Senior Data Scientist at San Diego Gas and Electric",
+        event: "Day 3 (5/3) Workshop",
+        img: 'LaurenPatrick.jpeg',
+        title: "Postdoctoral Researcher @ Kable Lab & Wharton Neuroscience Initiative, UPenn",
         bio: "",
-        link: "https://www.linkedin.com/in/pdashk/",
+        link: "https://www.linkedin.com/in/lauren-patrick-phd-0400b888/",
     },
     {
         id: 8,
-        name: "Ebrahim Feghhi",
+        name: "Dr. Yang Xu",
         day: 3,
-        event: "Career Panel",
-        img: 'EbrahimFeghhi.jpg',
-        title: "Neuroscience PhD Student at UCLA",
+        event: "Day 3 Workshop",
+        img: 'YangXu.jpeg',
+        title: "Assistant Professor of Computer Science @ SDSU, Computational Linguistics and Cognitive Sciences Lab",
         bio: "",
-        link: "https://www.linkedin.com/in/ebrahim-feghhi-1a158010b/"
+        link: "https://www.linkedin.com/in/yang-xu-0aa92036/"
     },
     {
         id: 9,
-        name: "Meilin Zhan",
+        name: "Maho Takahashi",
         day: 3,
-        event: "Career Panel",
-        img: 'MeilinZhan.jpg',
-        title: "Data Scientist at Airbnb",
+        event: "Day 3 Workshop",
+        img: 'MahoTakahashi.jpg',
+        title: "Linguistics PhD Candidate and Graduate Assistant @UCSD",
         bio: "",
-        link: "https://www.linkedin.com/in/meilinzhan/"
-    },
-    {
-        id: 10,
-        name: "Jillian Lee Wiggins",
-        day: 3,
-        event: "Research/Lab Symposium at Green Table Room",
-        img: 'JillianWiggins.jpg',
-        title: "SDSU Associate Professor",
-        bio: "",
-        link: "https://psychology.sdsu.edu/people/jillian-wiggins/"
-    },
-    {
-        id: 11,
-        name: "Virginia De Sa",
-        day: 3,
-        event: "Research/Lab Symposium at Thurgood Marshall College Room",
-        img: 'VirginiaDeSa.jpg',
-        title: "UCSD Professor",
-        bio: "",
-        link: "https://cogsci.ucsd.edu/~desa/"
+        link: "https://www.linkedin.com/in/maho-takahashi/"
     }
 ]
 

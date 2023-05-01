@@ -15,9 +15,9 @@ class SpeakerPreview extends React.Component {
                     <div className="pb-3">
                         <img className="speaker-img" src={require(`../../../img/speakers/${this.props.item.img}`).default}
                             alt={this.props.item.name} ></img>
-                        <div className="speaker-title">
+                        <div className="speaker-title my-3">
                             <h5>{this.props.item.name}</h5>
-                            <p>{this.props.item.title}</p>
+                            <p className="ital">{this.props.item.title}</p>
                         </div>
                     </div>                    
                 </a>

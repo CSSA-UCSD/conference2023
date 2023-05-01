@@ -90,9 +90,23 @@ const Home = () => {
                 </div> */}
             <div className="speakers">
                 <div className="container py-5">
-                    <div className="speakers-title header-gradient pt-5">
+                    <div className="speakers-title header-gradient">
                         <h3><Link to='/speakers' className='nav-link'><span className="ital">02</span> Speakers</Link></h3>
-                        <p className="px-5 mt-4">Soon to be released!</p>
+                        {/* <p className="px-5 mt-4">Soon to be released!</p> */}
+                        <div className="speakers-carousel">
+                            <Carousel 
+                            responsive={responsive}
+                            infinite={true}
+                            autoPlay={true}
+                            autoPlaySpeed={3500}
+                            centerMode={true}
+                            arrows={true}
+                            renderButtonGroupOutside={true} 
+                            customButtonGroup={<ButtonGroup />}
+                            >
+                            {SpeakerComponent}
+                            </Carousel>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -100,22 +114,7 @@ const Home = () => {
                 <h3><Link to='/schedule' className='nav-link'><span className="ital">03</span> Schedule</Link></h3>
                 {ScheduleComponent}
             </div>
-            {/* <div className="speakers pb-5">
-                    <div className="speakers-carousel">
-                        <Carousel 
-                        responsive={responsive}
-                        infinite={true}
-                        autoPlay={true}
-                        autoPlaySpeed={3500}
-                        centerMode={true}
-                        arrows={true}
-                        renderButtonGroupOutside={true} 
-                        customButtonGroup={<ButtonGroup />}
-                        >
-                           {SpeakerComponent}
-                        </Carousel>
-                    </div>
-                </div> */}
+
         </div>
     );
 }

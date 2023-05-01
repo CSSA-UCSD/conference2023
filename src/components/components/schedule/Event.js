@@ -13,37 +13,30 @@ class Event extends React.Component {
     render() {
 
         return (
-            <div className="day-schedule pb-5" data-aos="fade-up">
-                <div className="day-img">
-                </div>
-                <div className="day-info">
-                    <h4>{this.props.item.time}</h4>
-                    <h2>{this.props.item.title}</h2>
-                    <p style={{'color':'#0484fb'}}>{this.props.item.description}</p>
+            <div className="day-schedule pb-2" data-aos="fade-up">
+                <h2>{this.props.item.title}</h2>
+                <h4 className="text-right">{this.props.item.time}</h4>
+                {/* <p style={{'color':'#0484fb'}}>{this.props.item.description}</p> */}
+                {this.props.item.url ?
                     <div>
-                        {this.props.item.url ?
-                            <div>
-                                <button className="gradient-button">
-                                    {/*
-                                    <a className="" href={this.props.item.url} target="_blank" rel="noopener noreferrer">Zoom Link</a>
-                                    */}
-                                    <a className="" href="http://bit.ly/CSSARegistration" target="_blank" rel="noopener noreferrer">Zoom Link</a>
-                                </button>
-                            </div>
-                            : null
-                        }
-                        {this.props.item.recording ?
-                            <div>
-                                <button className="gradient-button">
-                                        <a className="" href={this.props.item.recording} target="_blank" rel="noopener noreferrer">Recording</a>
-                                </button>
-                            </div>
-                            : null
-                        }
+                        <button className="gradient-button">
+                            {/*
+                            <a className="" href={this.props.item.url} target="_blank" rel="noopener noreferrer">Zoom Link</a>
+                            */}
+                            <a className="" href="http://bit.ly/CSSARegistration" target="_blank" rel="noopener noreferrer">Zoom Link</a>
+                        </button>
                     </div>
-                </div>
-
-            </div>
+                    : null
+                }
+                {this.props.item.recording ?
+                    <div>
+                        <button className="gradient-button">
+                                <a className="" href={this.props.item.recording} target="_blank" rel="noopener noreferrer">Recording</a>
+                        </button>
+                    </div>
+                    : null
+                }
+        </div>
         );
     }
 }

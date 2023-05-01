@@ -7,6 +7,7 @@ import StickyBox from "react-sticky-box";
 
 import Event from "../../components/schedule/Event";
 import DayScheduleData from "../../data/home/DayScheduleData";
+import PlanetIcon from "../../../assets/planetIcon.png";
 
 function Day() {
 
@@ -29,8 +30,8 @@ function Day() {
 
     return (
         <div className="day-schedule pb-5" data-aos="fade-up">
-            <div className="row" style={{ display: 'flex', alignItems: 'flex-start' }}>
-                <StickyBox offsetBottom={40} className="sidebar mx-auto" >
+            <div className="row" style={{ display: 'flex' }}>
+                <StickyBox offsetBottom={40} className="sidebar mt-2 mb-4" >
                     {/* <div className=""> */}
                     <ul>
                         <li>
@@ -48,16 +49,28 @@ function Day() {
                 <div className="content">
                     {DayScheduleData.map(day => {
                         return <div className="day" key={day.id}>
-                            <h1>{day.name}</h1>
-                            <h4>{getWeekday(day.date, "short")} {day.date} | {day.time}</h4>
-                            <span>{day.location}</span>
-                            {/* {Day1Component} */}
-                            {day.events.map((item, key) => {
-                                return < Event key={key} item={item} />
-                            })
-                            }
+                            <img className="planet mx-3" src={PlanetIcon} alt="Planet Image"/>
+                            <div className="content">
+                                <h1>{day.name}</h1>
+                                <h4>{getWeekday(day.date, "short")} {day.date} | {day.time}</h4>
+                                <span className="location">{day.location}</span>
+                                <div className="my-5">
+                                    {day.events.map((item, key) => {
+                                        return < Event key={key} item={item} />
+                                    })
+                                    }
+                                </div>
+                            </div>
                         </div>
                     })}
+                    <div className="day">
+                        <img className="planet mx-3" src={PlanetIcon} alt="Planet Image"/>
+                        <div className="content">
+                            <h1>THANK YOU FOR VISITING!</h1>
+                            <h4>CSSA@UCSD</h4>
+                            <h4 id="cssa">Cognitive Science Student Association</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

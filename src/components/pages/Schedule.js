@@ -10,8 +10,8 @@ class Team extends React.Component {
         
         return (
             <div className="schedule pt-5">
-                <div className="container py-5">
-                    <h1 className="pb-5">Schedule</h1>
+                <div className="container pb-5">
+                    <h1 className="text-center">Schedule</h1>
                     <Day />
                     {/* {EventComponent} */}
 

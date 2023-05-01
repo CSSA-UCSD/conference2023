@@ -1,35 +1,54 @@
 .schedule {
     .day-schedule {
-        width: fit-content;
+        display: flex;
+        justify-content: space-between;
+        font-family: $body-font;
+        flex-wrap: wrap;
+
         .row {
             margin-right: 15px;
             margin-left: 15px;
+            
+            .content {
+                width: 100%;
+                
+                .day {
+                    display: flex;
+                    align-items: flex-start;
 
-            // for Day 1, Day 2 etc.
-            h1 {
-                padding-left: 0px;
-                font-size: 3.8rem;
-            }
+                    // for Day 1, Day 2 etc.
+                    .planet {
+                        transform: scaleY(-1); // Flips into correct orientation
+                        object-fit: contain;
+                    }
 
-            h4 {
-                color: $accent-2;
-            }
+                    & > .content {                
+                        h1 {
+                            padding-left: 0px;
+                            font-size: 3rem;
+                            margin-bottom: 0;
+                        }
 
-            h4, span {
-                font-size: 2.5rem;
-                font-family: $header-font;
-            }
+                        h4 {
+                            color: $accent-2;
+                        }
 
-            .day-info {
-                h2, h4 {
-                    font-family: $body-font;
-                    font-size: 2.5rem;
-                }
+                        h4, span {
+                            font-size: 1.7rem;
+                            font-family: $header-font;
+                        }
+                    }
 
-                h4 {
-                    font-style: oblique;
-                    font-weight: bold;
-                    color: $accent-1;
+                    .location {
+                        display: flex;
+                        margin-bottom: 30px;
+                    }
+
+                    #cssa {
+                        font-style: italic;
+                        font-family: $body-font;
+                    }
+
                 }
             }
         }
@@ -115,4 +134,7 @@
         }
     }
         */
+    @media (max-width: 700px) {
+        overflow: visible;
+    }
 }
